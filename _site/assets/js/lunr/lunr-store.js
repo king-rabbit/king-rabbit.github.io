@@ -791,9 +791,9 @@ var store = [{
         "url": "/minimal-mistakes/test/layout/uncategorized/layout-header-video/",
         "teaser": null
       },{
-        "title": null,
-        "excerpt":"첫 포스트다     테스트용으로 작성하는 첫 포스트.   하나 하나 정리해서 올려봐야겠다.   ","categories": [],
-        "tags": null,
-        "url": "/2021-09-25-first-post/",
+        "title": "첫 포스트",
+        "excerpt":"첫 포스트     테스트용으로 작성하는 첫 포스트.   하나 하나 정리해서 올려봐야겠다.   ","categories": ["Data Visualization"],
+        "tags": ["test"],
+        "url": "/data%20visualization/first-blog-post/",
         "teaser": null
       }]

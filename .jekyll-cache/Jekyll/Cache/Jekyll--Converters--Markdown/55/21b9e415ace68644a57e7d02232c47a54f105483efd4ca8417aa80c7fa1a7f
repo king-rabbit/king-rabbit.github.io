@@ -1,4 +1,4 @@
-I"��<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
+I"��<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
 
 <h2>Pages</h2>
 
@@ -1380,7 +1380,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/2021-09-25-first-post/" rel="permalink">
+        <a href="/data%20visualization/first-blog-post/" rel="permalink">첫 포스트
 </a>
       
     </h2>
@@ -1405,7 +1405,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
+    <p class="archive__item-excerpt" itemprop="description">첫 포스트
 </p>
   </article>
 </div>
