@@ -1,13 +1,9 @@
 ---
 layout: post
-title: "첫 포스트"
-excerpt: "테스트용 포스트"
-categories: 
-  - Data Visualization
+title: "테스트용 첫 포스트"
+category: Data Visualization
 tags: 
   - test
-toc: false
-toc_sticky: false
 date: 2021-09-25
 ---
 
