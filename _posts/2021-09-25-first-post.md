@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "테스트용 첫 포스트"
-category: Data Visualization
+categories: Data Visualization
 tags: 
   - test
 date: 2021-09-25
