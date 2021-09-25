@@ -1,13 +1,14 @@
 ---
-layout : post
+layout: post
 title: "첫 포스트"
 excerpt: "테스트용 포스트"
-categories: - Data Visualization
-tags: - test
+categories: 
+  - Data Visualization
+tags: 
+  - test
 toc: false
 toc_sticky: false
 date: 2021-09-25
-last_modified_at: 2021-09-25
 ---
 
 첫 포스트다
