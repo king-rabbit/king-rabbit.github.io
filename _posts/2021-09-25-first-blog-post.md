@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "테스트용 첫 포스트"
-excerpt: "처음 작성하는 글"
-categories: Data Visualization
+categories: 
+  - Data Visualization
 tags: 
   - test
 toc: false
@@ -10,7 +10,7 @@ toc_sticky: fasle
 date: 2021-09-25
 ---
 
-첫 포스트다
+첫 포스트
 
 -----------------
 
