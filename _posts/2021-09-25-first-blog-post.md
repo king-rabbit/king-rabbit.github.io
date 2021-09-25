@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "테스트용 첫 포스트"
+title: "첫 포스트"
 categories: 
   - Data Visualization
 tags: 
