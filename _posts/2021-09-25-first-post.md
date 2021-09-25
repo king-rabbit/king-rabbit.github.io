@@ -1,4 +1,5 @@
 ---
+layout : post
 title: "첫 포스트"
 excerpt: "테스트용 포스트"
 categories: - Data Visualization
