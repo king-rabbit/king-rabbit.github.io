@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: "첫 포스트"
 author_profile: true
 categories: 
