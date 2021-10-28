@@ -1,6 +1,7 @@
 ---
 title: "첫 포스트"
 author_profile: true
+search: true
 categories: 
   - Data Visualization
 tags: 
