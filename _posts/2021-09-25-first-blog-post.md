@@ -8,6 +8,7 @@ tags:
   - test
 toc: false
 toc_sticky: fasle
+layout: default
 date: 2021-09-25
 ---
 

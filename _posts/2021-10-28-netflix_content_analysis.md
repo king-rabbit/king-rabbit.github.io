@@ -1,28 +1,23 @@
 ---
-title: "pyecharts로 넷플릭스 데이터 시각화하기"
-Author_profile: true
+title: "netflix_content_analysis"
 search: true
 categories:
- - Data Visualization
+ - Notebook
 tags:
  - Need_modify
 last_modified_at: 2999-12-31 23:59
-layout: jupyter
+layout: single
 classes: wide
-date: 2021-10-28
 ---
-pyecharts로 넷플릭스 데이터 시각화하기
+# pyecharts로 넷플릭스 데이터 시각화하기
 =================
 
 안녕하세요, 킹래빗입니다🐰    
 데이터 분석으로 처음 글을 적어보는데요,     
     
 다들 많이 보시는 넷플릭스 영화 및 TV 콘텐츠를 분석해 본 내용입니다🎬🍿    
-데이터는 kaggle의 데이터셋을 이용해서 **미국 넷플릭스 데이터**라고 보시면 될 것 같아요.       
-
-pyecharts로 간단하게 그래프를 그려본 내용이니 간단하게 따라하실 수 있어요.
-
-
+데이터는 kaggle의 데이터셋을 이용해서 **미국 넷플릭스 데이터**라고 보시면 될 것 같아요.   
+pyecharts를 이용해 간단하게 시각화하는 내용이어서 쉽게 따라하실 수 있어요.    
 
 > 데이터와 분석 노트북은 깃허브 리포지토리에서 확인하실 수 있습니다.     
 > + [데이터셋 바로가기][link]
@@ -37,7 +32,7 @@ pyecharts로 간단하게 그래프를 그려본 내용이니 간단하게 따�
 **참고로 pyecharts는 0.5.11버전입니다.**
 
 <div class="prompt input_prompt">
-In&nbsp;[2]:
+In&nbsp;[1]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -46,14 +41,14 @@ In&nbsp;[2]:
 import warnings
 import pandas as pd
 import numpy as np
-from pyecharts import Bar, Pie
+from pyecharts import Bar, Line, Pie, Map
 warnings.filterwarnings(action='ignore')
 ```
 
 </div>
 
 <div class="prompt input_prompt">
-In&nbsp;[3]:
+In&nbsp;[2]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -72,7 +67,7 @@ data = pd.read_csv('netflix_titles.csv')
 * 장르는 listed_in 컬럼이며, 두개 이상의 장르에 속한 경우 comma(,)로 구분됩니다.
 
 <div class="prompt input_prompt">
-In&nbsp;[6]:
+In&nbsp;[3]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -244,7 +239,7 @@ countires_re = list(set(countires_re)) # 국가명 리스트 생성
 </div>
 
 <div class="prompt input_prompt">
-In&nbsp;[11]:
+In&nbsp;[6]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -275,7 +270,7 @@ countries_movie_number = pd.DataFrame({'country':countires_re, 'count':countries
 * 따로 설정하지는 않았는데 bar.use_theme()으로 테마를 설정할 수 있습니다.
 
 <div class="prompt input_prompt">
-In&nbsp;[59]:
+In&nbsp;[7]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -307,15 +302,15 @@ bar
         }
     });
 </script>
-    <div id="10bf60f7f89f4d98a2c000af47d3655a" style="width:900px;height:400px;"></div>
+    <div id="6874e37f8c4543b3a4796fc3ffd907e2" style="width:900px;height:400px;"></div>
 
 
 <script>
     require(['echarts'], function(echarts) {
 
-var myChart_10bf60f7f89f4d98a2c000af47d3655a = echarts.init(document.getElementById('10bf60f7f89f4d98a2c000af47d3655a'), 'light', {renderer: 'canvas'});
+var myChart_6874e37f8c4543b3a4796fc3ffd907e2 = echarts.init(document.getElementById('6874e37f8c4543b3a4796fc3ffd907e2'), 'light', {renderer: 'canvas'});
 
-var option_10bf60f7f89f4d98a2c000af47d3655a = {
+var option_6874e37f8c4543b3a4796fc3ffd907e2 = {
     "title": [
         {
             "text": "\uad6d\uac00\ubcc4 \ub137\ud50c\ub9ad\uc2a4 \ucf58\ud150\uce20 \uac1c\uc218",
@@ -349,7 +344,7 @@ var option_10bf60f7f89f4d98a2c000af47d3655a = {
             }
         }
     },
-    "series_id": 7862038,
+    "series_id": 467944,
     "tooltip": {
         "trigger": "item",
         "triggerOn": "mousemove|click",
@@ -400,7 +395,7 @@ var option_10bf60f7f89f4d98a2c000af47d3655a = {
             "markLine": {
                 "data": []
             },
-            "seriesId": 7862038
+            "seriesId": 467944
         }
     ],
     "legend": [
@@ -457,8 +452,8 @@ var option_10bf60f7f89f4d98a2c000af47d3655a = {
                 "France",
                 "Japan",
                 "Spain",
-                "Germany",
                 "South Korea",
+                "Germany",
                 "Mexico"
             ]
         }
@@ -524,7 +519,7 @@ var option_10bf60f7f89f4d98a2c000af47d3655a = {
         "#f6f5ec"
     ]
 };
-myChart_10bf60f7f89f4d98a2c000af47d3655a.setOption(option_10bf60f7f89f4d98a2c000af47d3655a);
+myChart_6874e37f8c4543b3a4796fc3ffd907e2.setOption(option_6874e37f8c4543b3a4796fc3ffd907e2);
 
     });
 </script>
@@ -544,7 +539,7 @@ myChart_10bf60f7f89f4d98a2c000af47d3655a.setOption(option_10bf60f7f89f4d98a2c000
 콘텐츠별로 넷플릭스에 추가된 날짜는 date_added 컬럼에 저장되어 있습니다. 여기서 연도만 date_added_year 컬럼으로 저장해 준 뒤 시각화해보았습니다.
 
 <div class="prompt input_prompt">
-In&nbsp;[23]:
+In&nbsp;[8]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -558,7 +553,7 @@ for i in range(len(data)):
 </div>
 
 <div class="prompt input_prompt">
-In&nbsp;[24]:
+In&nbsp;[9]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -570,7 +565,7 @@ contents_added_year = pd.DataFrame(data['date_added_year'].value_counts()).reset
 </div>
 
 <div class="prompt input_prompt">
-In&nbsp;[58]:
+In&nbsp;[10]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -603,15 +598,15 @@ bar
         }
     });
 </script>
-    <div id="8354854b01304010aa968a92288adaef" style="width:900px;height:400px;"></div>
+    <div id="d3586439516549b1b965868f444b9ec4" style="width:900px;height:400px;"></div>
 
 
 <script>
     require(['echarts'], function(echarts) {
 
-var myChart_8354854b01304010aa968a92288adaef = echarts.init(document.getElementById('8354854b01304010aa968a92288adaef'), 'light', {renderer: 'canvas'});
+var myChart_d3586439516549b1b965868f444b9ec4 = echarts.init(document.getElementById('d3586439516549b1b965868f444b9ec4'), 'light', {renderer: 'canvas'});
 
-var option_8354854b01304010aa968a92288adaef = {
+var option_d3586439516549b1b965868f444b9ec4 = {
     "title": [
         {
             "text": "\uc5f0\ub3c4\ubcc4 \ucd94\uac00\ub41c \ucf58\ud150\uce20 \uc218",
@@ -645,7 +640,7 @@ var option_8354854b01304010aa968a92288adaef = {
             }
         }
     },
-    "series_id": 6606426,
+    "series_id": 6087743,
     "tooltip": {
         "trigger": "item",
         "triggerOn": "mousemove|click",
@@ -678,7 +673,7 @@ var option_8354854b01304010aa968a92288adaef = {
                 1879.0,
                 1498.0
             ],
-            "stack": "stack_6606426",
+            "stack": "stack_6087743",
             "barCategoryGap": "20%",
             "label": {
                 "normal": {
@@ -701,7 +696,7 @@ var option_8354854b01304010aa968a92288adaef = {
             "markLine": {
                 "data": []
             },
-            "seriesId": 6606426
+            "seriesId": 6087743
         }
     ],
     "legend": [
@@ -829,7 +824,7 @@ var option_8354854b01304010aa968a92288adaef = {
         "#f6f5ec"
     ]
 };
-myChart_8354854b01304010aa968a92288adaef.setOption(option_8354854b01304010aa968a92288adaef);
+myChart_d3586439516549b1b965868f444b9ec4.setOption(option_d3586439516549b1b965868f444b9ec4);
 
     });
 </script>
@@ -849,7 +844,7 @@ myChart_8354854b01304010aa968a92288adaef.setOption(option_8354854b01304010aa968a
 영화가 거의 70%에 육박하네요. TV쇼도 많다고 생각했는데, 아직은 영화의 비중이 높군요.
 
 <div class="prompt input_prompt">
-In&nbsp;[53]:
+In&nbsp;[11]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -873,15 +868,15 @@ pie
         }
     });
 </script>
-    <div id="5063f3d9df964e5c9c678e6b8ba307af" style="width:800px;height:400px;"></div>
+    <div id="082850cdd599474997d743be3c54a611" style="width:800px;height:400px;"></div>
 
 
 <script>
     require(['echarts'], function(echarts) {
 
-var myChart_5063f3d9df964e5c9c678e6b8ba307af = echarts.init(document.getElementById('5063f3d9df964e5c9c678e6b8ba307af'), 'light', {renderer: 'canvas'});
+var myChart_082850cdd599474997d743be3c54a611 = echarts.init(document.getElementById('082850cdd599474997d743be3c54a611'), 'light', {renderer: 'canvas'});
 
-var option_5063f3d9df964e5c9c678e6b8ba307af = {
+var option_082850cdd599474997d743be3c54a611 = {
     "title": [
         {
             "text": "\uc720\ud615\ubcc4 \ub137\ud50c\ub9ad\uc2a4 \ucf58\ud150\uce20 \ube44\uc911",
@@ -915,7 +910,7 @@ var option_5063f3d9df964e5c9c678e6b8ba307af = {
             }
         }
     },
-    "series_id": 192351,
+    "series_id": 2993534,
     "tooltip": {
         "trigger": "item",
         "triggerOn": "mousemove|click",
@@ -967,7 +962,7 @@ var option_5063f3d9df964e5c9c678e6b8ba307af = {
                     "formatter": "{b}: {d}%"
                 }
             },
-            "seriesId": 192351
+            "seriesId": 2993534
         }
     ],
     "legend": [
@@ -1015,7 +1010,7 @@ var option_5063f3d9df964e5c9c678e6b8ba307af = {
         "#f6f5ec"
     ]
 };
-myChart_5063f3d9df964e5c9c678e6b8ba307af.setOption(option_5063f3d9df964e5c9c678e6b8ba307af);
+myChart_082850cdd599474997d743be3c54a611.setOption(option_082850cdd599474997d743be3c54a611);
 
     });
 </script>
@@ -1028,7 +1023,7 @@ myChart_5063f3d9df964e5c9c678e6b8ba307af.setOption(option_5063f3d9df964e5c9c678e
 다음은 장르분석입니다. 국가별 콘텐츠 개수 분석과 마찬가지로 장르별로 콘텐츠 개수를 집계해줍니다.
 
 <div class="prompt input_prompt">
-In&nbsp;[29]:
+In&nbsp;[12]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -1047,7 +1042,7 @@ categories = set(categories)
 </div>
 
 <div class="prompt input_prompt">
-In&nbsp;[30]:
+In&nbsp;[13]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -1066,7 +1061,7 @@ for i in range(len(data)):
 </div>
 
 <div class="prompt input_prompt">
-In&nbsp;[31]:
+In&nbsp;[14]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -1078,7 +1073,7 @@ show_category = pd.DataFrame({'show_id':show_ids, 'category':categories_list})
 </div>
 
 <div class="prompt input_prompt">
-In&nbsp;[57]:
+In&nbsp;[15]:
 </div>
 
 <div class="input_area" markdown="1">
@@ -1112,15 +1107,15 @@ bar
         }
     });
 </script>
-    <div id="9d09fcbc81504396a312ac1f9af1e6a9" style="width:900px;height:400px;"></div>
+    <div id="fd31c07c7ce14fbaa5a7c595122e1d2e" style="width:900px;height:400px;"></div>
 
 
 <script>
     require(['echarts'], function(echarts) {
 
-var myChart_9d09fcbc81504396a312ac1f9af1e6a9 = echarts.init(document.getElementById('9d09fcbc81504396a312ac1f9af1e6a9'), 'light', {renderer: 'canvas'});
+var myChart_fd31c07c7ce14fbaa5a7c595122e1d2e = echarts.init(document.getElementById('fd31c07c7ce14fbaa5a7c595122e1d2e'), 'light', {renderer: 'canvas'});
 
-var option_9d09fcbc81504396a312ac1f9af1e6a9 = {
+var option_fd31c07c7ce14fbaa5a7c595122e1d2e = {
     "title": [
         {
             "text": "\uc7a5\ub974\ubcc4 \ucf58\ud150\uce20 \uac1c\uc218",
@@ -1154,7 +1149,7 @@ var option_9d09fcbc81504396a312ac1f9af1e6a9 = {
             }
         }
     },
-    "series_id": 6852444,
+    "series_id": 3226739,
     "tooltip": {
         "trigger": "item",
         "triggerOn": "mousemove|click",
@@ -1205,7 +1200,7 @@ var option_9d09fcbc81504396a312ac1f9af1e6a9 = {
             "markLine": {
                 "data": []
             },
-            "seriesId": 6852444
+            "seriesId": 3226739
         }
     ],
     "legend": [
@@ -1329,7 +1324,7 @@ var option_9d09fcbc81504396a312ac1f9af1e6a9 = {
         "#f6f5ec"
     ]
 };
-myChart_9d09fcbc81504396a312ac1f9af1e6a9.setOption(option_9d09fcbc81504396a312ac1f9af1e6a9);
+myChart_fd31c07c7ce14fbaa5a7c595122e1d2e.setOption(option_fd31c07c7ce14fbaa5a7c595122e1d2e);
 
     });
 </script>
