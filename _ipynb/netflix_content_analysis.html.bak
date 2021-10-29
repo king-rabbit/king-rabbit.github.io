@@ -1,0 +1,1443 @@
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="pyecharts&#47196;-&#45367;&#54540;&#47533;&#49828;-&#45936;&#51060;&#53552;-&#49884;&#44033;&#54868;&#54616;&#44592;">pyecharts&#47196; &#45367;&#54540;&#47533;&#49828; &#45936;&#51060;&#53552; &#49884;&#44033;&#54868;&#54616;&#44592;<a class="anchor-link" href="#pyecharts&#47196;-&#45367;&#54540;&#47533;&#49828;-&#45936;&#51060;&#53552;-&#49884;&#44033;&#54868;&#54616;&#44592;"> </a></h1><p>=================</p>
+<p>안녕하세요, 킹래빗입니다🐰<br>
+데이터 분석으로 처음 글을 적어보는데요,</p>
+<p>다들 많이 보시는 넷플릭스 영화 및 TV 콘텐츠를 분석해 본 내용입니다🎬🍿<br>
+데이터는 kaggle의 데이터셋을 이용해서 <strong>미국 넷플릭스 데이터</strong>라고 보시면 될 것 같아요.<br>
+pyecharts를 이용해 간단하게 시각화하는 내용이어서 쉽게 따라하실 수 있어요.</p>
+<blockquote><p>데이터와 분석 노트북은 깃허브 리포지토리에서 확인하실 수 있습니다.</p>
+<ul>
+<li><a href="https://www.kaggle.com/shivamb/netflix-shows" title="netflix-shows-dataset">데이터셋 바로가기</a></li>
+<li><a href="https://github.com/king-rabbit">리포지토리 바로가기</a></li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="1.-&#45936;&#51060;&#53552;-&#48520;&#47084;&#50724;&#44592;">1. &#45936;&#51060;&#53552; &#48520;&#47084;&#50724;&#44592;<a class="anchor-link" href="#1.-&#45936;&#51060;&#53552;-&#48520;&#47084;&#50724;&#44592;"> </a></h2><hr>
+<p>필요한 라이브러리와 데이터를 불러오고 데이터 형식 등을 확인해봅니다.<br>
+<strong>참고로 pyecharts는 0.5.11버전입니다.</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">pyecharts</span> <span class="kn">import</span> <span class="n">Bar</span><span class="p">,</span> <span class="n">Line</span><span class="p">,</span> <span class="n">Pie</span><span class="p">,</span> <span class="n">Map</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="n">action</span><span class="o">=</span><span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#데이터 불러오기</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;netflix_titles.csv&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>드라마/영화 콘텐츠에는 고유번호가 지정되어 있습니다(show_id 컬럼)</li>
+<li>type에서는 영화인지 TV쇼인지를 구분합니다</li>
+<li>출연진(cast)과 국가(country, 두개 이상인 경우)는 comma(,)로 구분되어 있습니다</li>
+<li>콘텐츠 길이(duration)의 경우 영화면 분 단위로, TV쇼이면 시즌 단위로 표기됩니다</li>
+<li>장르는 listed_in 컬럼이며, 두개 이상의 장르에 속한 경우 comma(,)로 구분됩니다.</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>show_id</th>
+      <th>type</th>
+      <th>title</th>
+      <th>director</th>
+      <th>cast</th>
+      <th>country</th>
+      <th>date_added</th>
+      <th>release_year</th>
+      <th>rating</th>
+      <th>duration</th>
+      <th>listed_in</th>
+      <th>description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>s1</td>
+      <td>Movie</td>
+      <td>Dick Johnson Is Dead</td>
+      <td>Kirsten Johnson</td>
+      <td>NaN</td>
+      <td>United States</td>
+      <td>September 25, 2021</td>
+      <td>2020</td>
+      <td>PG-13</td>
+      <td>90 min</td>
+      <td>Documentaries</td>
+      <td>As her father nears the end of his life, filmm...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>s2</td>
+      <td>TV Show</td>
+      <td>Blood &amp; Water</td>
+      <td>NaN</td>
+      <td>Ama Qamata, Khosi Ngema, Gail Mabalane, Thaban...</td>
+      <td>South Africa</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>2 Seasons</td>
+      <td>International TV Shows, TV Dramas, TV Mysteries</td>
+      <td>After crossing paths at a party, a Cape Town t...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>s3</td>
+      <td>TV Show</td>
+      <td>Ganglands</td>
+      <td>Julien Leclercq</td>
+      <td>Sami Bouajila, Tracy Gotoas, Samuel Jouy, Nabi...</td>
+      <td>NaN</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>1 Season</td>
+      <td>Crime TV Shows, International TV Shows, TV Act...</td>
+      <td>To protect his family from a powerful drug lor...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>s4</td>
+      <td>TV Show</td>
+      <td>Jailbirds New Orleans</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>1 Season</td>
+      <td>Docuseries, Reality TV</td>
+      <td>Feuds, flirtations and toilet talk go down amo...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>s5</td>
+      <td>TV Show</td>
+      <td>Kota Factory</td>
+      <td>NaN</td>
+      <td>Mayur More, Jitendra Kumar, Ranjan Raj, Alam K...</td>
+      <td>India</td>
+      <td>September 24, 2021</td>
+      <td>2021</td>
+      <td>TV-MA</td>
+      <td>2 Seasons</td>
+      <td>International TV Shows, Romantic TV Shows, TV ...</td>
+      <td>In a city of coaching centers known to train I...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2.-&#50612;&#45712;-&#45208;&#46972;-&#53080;&#53584;&#52768;&#44032;-&#47566;&#51012;&#44620;">2. &#50612;&#45712; &#45208;&#46972; &#53080;&#53584;&#52768;&#44032; &#47566;&#51012;&#44620;<a class="anchor-link" href="#2.-&#50612;&#45712;-&#45208;&#46972;-&#53080;&#53584;&#52768;&#44032;-&#47566;&#51012;&#44620;"> </a></h2><hr>
+<p>아무래도 나라별로 콘텐츠 개수에 차이가 나겠죠. 국가별 콘텐츠 개수가 어떻게 되는지 확인하기 위해 먼저 country 컬럼을 전처리해 줍니다.<br>
+comma를 기준으로 country 컬럼을 구분해 준 뒤 국가별로 영화/TV콘텐츠 개수를 집계한 데이터프레임을 만드는 방식입니다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countries</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="n">countries_content</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">countries_content</span><span class="p">:</span>
+            <span class="n">countries</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">country</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+<span class="n">countries</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">countries</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countries</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="c1">#아무것도 없는 문자열 제거</span>
+<span class="n">countires_re</span> <span class="o">=</span> <span class="p">[</span> <span class="n">country</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">countries</span> <span class="p">]</span>
+<span class="n">countires_re</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">countires_re</span><span class="p">))</span> <span class="c1"># 국가명 리스트 생성</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">countries_cnt</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">countires_re</span><span class="p">:</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># 국가별로 영화/TV콘텐츠 개수를 셉니다. 영화의 country컬럼에 해당 국가명이 포함되면 1을 추가하는 방식입니다.</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>  
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="nb">str</span> <span class="ow">and</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">]</span><span class="o">.</span><span class="fm">__contains__</span><span class="p">(</span><span class="n">country</span><span class="p">):</span>
+            <span class="n">cnt</span> <span class="o">+=</span><span class="mi">1</span>
+    <span class="n">countries_cnt</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cnt</span><span class="p">)</span> 
+
+<span class="c1"># count를 기준으로 정렬합니다.</span>
+<span class="n">countries_movie_number</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;country&#39;</span><span class="p">:</span><span class="n">countires_re</span><span class="p">,</span> <span class="s1">&#39;count&#39;</span><span class="p">:</span><span class="n">countries_cnt</span><span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<blockquote><p>데이터 프레임을 만든 후에는 이를 pyecharts를 이용해 바 그래프로 시각화해 봅니다.</p>
+<ul>
+<li>콘텐츠 수 상위 10개 국가만 시각화했습니다.</li>
+<li>먼저 Bar 그래프 객체를 생성한 뒤 테마를 설정하고 그래프 이름, x축 및 y축 데이터 등을 설정하는 방식입니다.</li>
+<li>그래프 객체 설정 시 전체 그래프의 크기(여기서는 width만 설정함)를 정할 수 있습니다.</li>
+<li>x축의 폰트크기는 9입니다.</li>
+<li>label_text_size에서는 그래프 라벨의 폰트크기를 정합니다.</li>
+<li>is_datazoom_show를 False로 설정해 줌이 불가능하게 했습니다.</li>
+<li>따로 설정하지는 않았는데 bar.use_theme()으로 테마를 설정할 수 있습니다.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar</span> <span class="o">=</span> <span class="n">Bar</span><span class="p">(</span><span class="s2">&quot;국가별 넷플릭스 콘텐츠 개수&quot;</span><span class="p">,</span>
+         <span class="n">width</span><span class="o">=</span><span class="mi">900</span><span class="p">)</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="n">countries_movie_number</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">][:</span><span class="mi">10</span><span class="p">],</span> 
+        <span class="n">countries_movie_number</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">][:</span><span class="mi">10</span><span class="p">],</span>
+        <span class="n">xaxis_label_textsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
+        <span class="n">xaxis_interval</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">label_text_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">is_label_show</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+        <span class="n">is_datazoom_show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">bar</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[7]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<script>
+    require.config({
+        paths: {
+            'echarts': '/nbextensions/echarts/echarts.min'
+        }
+    });
+</script>
+    <div id="6874e37f8c4543b3a4796fc3ffd907e2" style="width:900px;height:400px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        
+var myChart_6874e37f8c4543b3a4796fc3ffd907e2 = echarts.init(document.getElementById('6874e37f8c4543b3a4796fc3ffd907e2'), 'light', {renderer: 'canvas'});
+
+var option_6874e37f8c4543b3a4796fc3ffd907e2 = {
+    "title": [
+        {
+            "text": "\uad6d\uac00\ubcc4 \ub137\ud50c\ub9ad\uc2a4 \ucf58\ud150\uce20 \uac1c\uc218",
+            "left": "auto",
+            "top": "auto",
+            "textStyle": {
+                "fontSize": 18
+            },
+            "subtextStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "vertical",
+        "left": "95%",
+        "top": "center",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view"
+            }
+        }
+    },
+    "series_id": 467944,
+    "tooltip": {
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "backgroundColor": "rgba(50,50,50,0.7)",
+        "borderColor": "#333",
+        "borderWidth": 0
+    },
+    "series": [
+        {
+            "type": "bar",
+            "data": [
+                3690.0,
+                1046.0,
+                806.0,
+                445.0,
+                393.0,
+                318.0,
+                232.0,
+                231.0,
+                231.0,
+                169.0
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "normal": {
+                    "show": true,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 10
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            },
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "seriesId": 467944
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "center",
+            "top": "top",
+            "orient": "horizontal",
+            "textStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "animation": true,
+    "xAxis": [
+        {
+            "show": true,
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "inverse": false,
+            "boundaryGap": true,
+            "type": "category",
+            "splitLine": {
+                "show": false
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 1
+                }
+            },
+            "axisLabel": {
+                "interval": 0,
+                "rotate": 0,
+                "margin": 8,
+                "textStyle": {
+                    "fontSize": 9
+                }
+            },
+            "data": [
+                "United States",
+                "India",
+                "United Kingdom",
+                "Canada",
+                "France",
+                "Japan",
+                "Spain",
+                "South Korea",
+                "Germany",
+                "Mexico"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "inverse": false,
+            "boundaryGap": true,
+            "type": "value",
+            "splitLine": {
+                "show": true
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 1
+                }
+            },
+            "axisLabel": {
+                "interval": "auto",
+                "formatter": "{value} ",
+                "rotate": 0,
+                "margin": 8,
+                "textStyle": {
+                    "fontSize": 12
+                }
+            }
+        }
+    ],
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597",
+        "#f6f5ec"
+    ]
+};
+myChart_6874e37f8c4543b3a4796fc3ffd907e2.setOption(option_6874e37f8c4543b3a4796fc3ffd907e2);
+
+    });
+</script>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>역시 미국🗽의 콘텐츠 양이 압도적입니다. 다음은 발리우드로 유명한 인도인데 2위임에도 미국과 3.5배 정도 차이가 납니다.<br>
+한국은 231개로 독일과 공동 8위입니다. 멕시코가 169개로 10위를 차지했네요.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="3.-&#50672;&#46020;&#48324;-&#53080;&#53584;&#52768;-&#44060;&#49688;-&#48516;&#49437;">3. &#50672;&#46020;&#48324; &#53080;&#53584;&#52768; &#44060;&#49688; &#48516;&#49437;<a class="anchor-link" href="#3.-&#50672;&#46020;&#48324;-&#53080;&#53584;&#52768;-&#44060;&#49688;-&#48516;&#49437;"> </a></h3><hr>
+<p>몇 년 전만 해도 넷플릭스에서 볼 게 많지 않다는 평가가 많았는데요.<br>
+최근에는 콘텐츠 양도 절대적으로 많아졌고 오리지널 시리즈도 많이 제작되고 있어서 더이상 이런 평가는 들리지 않는 것 같습니다.<br>
+넷플릭스가 매년 콘텐츠를 얼마나 늘려왔는지 한번 확인해볼까요.<br>
+콘텐츠별로 넷플릭스에 추가된 날짜는 date_added 컬럼에 저장되어 있습니다. 여기서 연도만 date_added_year 컬럼으로 저장해 준 뒤 시각화해보았습니다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;date_added&#39;</span><span class="p">])</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;date_added_year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;date_added&#39;</span><span class="p">][</span><span class="o">-</span><span class="mi">4</span><span class="p">:]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">contents_added_year</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;date_added_year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;index&#39;</span><span class="p">:</span><span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;date_added_year&#39;</span><span class="p">:</span><span class="s1">&#39;count&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;year&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar</span> <span class="o">=</span> <span class="n">Bar</span><span class="p">(</span><span class="s2">&quot;연도별 추가된 콘텐츠 수&quot;</span><span class="p">,</span>
+         <span class="n">width</span><span class="o">=</span><span class="mi">900</span><span class="p">)</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="n">contents_added_year</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">],</span> 
+        <span class="n">contents_added_year</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">],</span>
+        <span class="n">xaxis_label_textsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
+        <span class="n">xaxis_interval</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">label_text_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">is_label_show</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+        <span class="n">is_stack</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">is_datazoom_show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">bar</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<script>
+    require.config({
+        paths: {
+            'echarts': '/nbextensions/echarts/echarts.min'
+        }
+    });
+</script>
+    <div id="d3586439516549b1b965868f444b9ec4" style="width:900px;height:400px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        
+var myChart_d3586439516549b1b965868f444b9ec4 = echarts.init(document.getElementById('d3586439516549b1b965868f444b9ec4'), 'light', {renderer: 'canvas'});
+
+var option_d3586439516549b1b965868f444b9ec4 = {
+    "title": [
+        {
+            "text": "\uc5f0\ub3c4\ubcc4 \ucd94\uac00\ub41c \ucf58\ud150\uce20 \uc218",
+            "left": "auto",
+            "top": "auto",
+            "textStyle": {
+                "fontSize": 18
+            },
+            "subtextStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "vertical",
+        "left": "95%",
+        "top": "center",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view"
+            }
+        }
+    },
+    "series_id": 6087743,
+    "tooltip": {
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "backgroundColor": "rgba(50,50,50,0.7)",
+        "borderColor": "#333",
+        "borderWidth": 0
+    },
+    "series": [
+        {
+            "type": "bar",
+            "data": [
+                2.0,
+                2.0,
+                1.0,
+                13.0,
+                3.0,
+                11.0,
+                24.0,
+                82.0,
+                429.0,
+                1188.0,
+                1649.0,
+                2016.0,
+                1879.0,
+                1498.0
+            ],
+            "stack": "stack_6087743",
+            "barCategoryGap": "20%",
+            "label": {
+                "normal": {
+                    "show": true,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 10
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            },
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "seriesId": 6087743
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "center",
+            "top": "top",
+            "orient": "horizontal",
+            "textStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "animation": true,
+    "xAxis": [
+        {
+            "show": true,
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "inverse": false,
+            "boundaryGap": true,
+            "type": "category",
+            "splitLine": {
+                "show": false
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 1
+                }
+            },
+            "axisLabel": {
+                "interval": 0,
+                "rotate": 0,
+                "margin": 8,
+                "textStyle": {
+                    "fontSize": 9
+                }
+            },
+            "data": [
+                2008.0,
+                2009.0,
+                2010.0,
+                2011.0,
+                2012.0,
+                2013.0,
+                2014.0,
+                2015.0,
+                2016.0,
+                2017.0,
+                2018.0,
+                2019.0,
+                2020.0,
+                2021.0
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "inverse": false,
+            "boundaryGap": true,
+            "type": "value",
+            "splitLine": {
+                "show": true
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 1
+                }
+            },
+            "axisLabel": {
+                "interval": "auto",
+                "formatter": "{value} ",
+                "rotate": 0,
+                "margin": 8,
+                "textStyle": {
+                    "fontSize": 12
+                }
+            }
+        }
+    ],
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597",
+        "#f6f5ec"
+    ]
+};
+myChart_d3586439516549b1b965868f444b9ec4.setOption(option_d3586439516549b1b965868f444b9ec4);
+
+    });
+</script>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="4.-&#50976;&#54805;/&#51109;&#47476;-&#48516;&#49437;">4. &#50976;&#54805;/&#51109;&#47476; &#48516;&#49437;<a class="anchor-link" href="#4.-&#50976;&#54805;/&#51109;&#47476;-&#48516;&#49437;"> </a></h3><hr>
+<p>어떤 유형/장르의 콘텐츠가 넷플릭스에 많은지도 개인적으로 궁금했던 부분입니다.<br>
+유형은 TV쇼인지 영화인지 구분하는 걸 의미해서 분석이 용이합니다.<br>
+반면에 영화와 TV쇼의 장르 구분이 별개로 되어 있고 한 콘텐츠가 여러 장르로 구분되어 있어서 구분이 명확하지 않긴 하지만, 일단 주어진 데이터로 돌려봤습니다.</p>
+<h4 id="4-1.-&#50976;&#54805;-&#48516;&#49437;">4-1. &#50976;&#54805; &#48516;&#49437;<a class="anchor-link" href="#4-1.-&#50976;&#54805;-&#48516;&#49437;"> </a></h4><p>영화와 TV쇼 중 어느 쪽 비중이 큰지를 파이차트로 시각화했습니다.<br>
+영화가 거의 70%에 육박하네요. TV쇼도 많다고 생각했는데, 아직은 영화의 비중이 높군요.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pie</span> <span class="o">=</span> <span class="n">Pie</span><span class="p">(</span><span class="s2">&quot;유형별 넷플릭스 콘텐츠 비중&quot;</span><span class="p">)</span>
+<span class="n">pie</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">data</span><span class="p">[</span><span class="s1">&#39;type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">,</span> <span class="n">is_label_show</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">pie</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<script>
+    require.config({
+        paths: {
+            'echarts': '/nbextensions/echarts/echarts.min'
+        }
+    });
+</script>
+    <div id="082850cdd599474997d743be3c54a611" style="width:800px;height:400px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        
+var myChart_082850cdd599474997d743be3c54a611 = echarts.init(document.getElementById('082850cdd599474997d743be3c54a611'), 'light', {renderer: 'canvas'});
+
+var option_082850cdd599474997d743be3c54a611 = {
+    "title": [
+        {
+            "text": "\uc720\ud615\ubcc4 \ub137\ud50c\ub9ad\uc2a4 \ucf58\ud150\uce20 \ube44\uc911",
+            "left": "auto",
+            "top": "auto",
+            "textStyle": {
+                "fontSize": 18
+            },
+            "subtextStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "vertical",
+        "left": "95%",
+        "top": "center",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view"
+            }
+        }
+    },
+    "series_id": 2993534,
+    "tooltip": {
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "backgroundColor": "rgba(50,50,50,0.7)",
+        "borderColor": "#333",
+        "borderWidth": 0
+    },
+    "series": [
+        {
+            "type": "pie",
+            "data": [
+                {
+                    "name": "Movie",
+                    "value": 6131.0
+                },
+                {
+                    "name": "TV Show",
+                    "value": 2676.0
+                }
+            ],
+            "radius": [
+                "0%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "normal": {
+                    "show": true,
+                    "position": "outside",
+                    "textStyle": {
+                        "fontSize": 12
+                    },
+                    "formatter": "{b}: {d}%"
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    },
+                    "formatter": "{b}: {d}%"
+                }
+            },
+            "seriesId": 2993534
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Movie",
+                "TV Show"
+            ],
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "center",
+            "top": "top",
+            "orient": "horizontal",
+            "textStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "animation": true,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597",
+        "#f6f5ec"
+    ]
+};
+myChart_082850cdd599474997d743be3c54a611.setOption(option_082850cdd599474997d743be3c54a611);
+
+    });
+</script>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="4-2.-&#51109;&#47476;-&#48516;&#49437;">4-2. &#51109;&#47476; &#48516;&#49437;<a class="anchor-link" href="#4-2.-&#51109;&#47476;-&#48516;&#49437;"> </a></h4><p>다음은 장르분석입니다. 국가별 콘텐츠 개수 분석과 마찬가지로 장르별로 콘텐츠 개수를 집계해줍니다.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categories</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="n">cats</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;listed_in&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">cats</span><span class="p">:</span>
+        <span class="n">categories</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cat</span><span class="p">)</span>
+
+<span class="n">categories</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">categories</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">show_ids</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">categories_list</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)):</span>
+    <span class="n">cats</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;listed_in&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">cat</span> <span class="ow">in</span> <span class="n">cats</span><span class="p">:</span>
+        <span class="n">show_ids</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;show_id&#39;</span><span class="p">])</span>
+        <span class="n">categories_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cat</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">show_category</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;show_id&#39;</span><span class="p">:</span><span class="n">show_ids</span><span class="p">,</span> <span class="s1">&#39;category&#39;</span><span class="p">:</span><span class="n">categories_list</span><span class="p">})</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bar</span> <span class="o">=</span> <span class="n">Bar</span><span class="p">(</span><span class="s2">&quot;장르별 콘텐츠 개수&quot;</span><span class="p">,</span>
+         <span class="n">width</span><span class="o">=</span><span class="mi">900</span><span class="p">)</span>
+<span class="n">bar</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> 
+        <span class="n">show_category</span><span class="o">.</span><span class="n">category</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">keys</span><span class="p">(),</span> 
+        <span class="n">show_category</span><span class="o">.</span><span class="n">category</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[:</span><span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="n">bar_category_gap</span><span class="o">=</span><span class="s1">&#39;10%&#39;</span><span class="p">,</span>
+        <span class="n">xaxis_type</span><span class="o">=</span><span class="s1">&#39;category&#39;</span><span class="p">,</span>
+        <span class="n">xaxis_label_textsize</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span>
+        <span class="n">xaxis_interval</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">label_text_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">is_label_show</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+        <span class="n">is_datazoom_show</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">bar</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[15]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<script>
+    require.config({
+        paths: {
+            'echarts': '/nbextensions/echarts/echarts.min'
+        }
+    });
+</script>
+    <div id="fd31c07c7ce14fbaa5a7c595122e1d2e" style="width:900px;height:400px;"></div>
+
+
+<script>
+    require(['echarts'], function(echarts) {
+        
+var myChart_fd31c07c7ce14fbaa5a7c595122e1d2e = echarts.init(document.getElementById('fd31c07c7ce14fbaa5a7c595122e1d2e'), 'light', {renderer: 'canvas'});
+
+var option_fd31c07c7ce14fbaa5a7c595122e1d2e = {
+    "title": [
+        {
+            "text": "\uc7a5\ub974\ubcc4 \ucf58\ud150\uce20 \uac1c\uc218",
+            "left": "auto",
+            "top": "auto",
+            "textStyle": {
+                "fontSize": 18
+            },
+            "subtextStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "vertical",
+        "left": "95%",
+        "top": "center",
+        "feature": {
+            "saveAsImage": {
+                "show": true,
+                "title": "save as image"
+            },
+            "restore": {
+                "show": true,
+                "title": "restore"
+            },
+            "dataView": {
+                "show": true,
+                "title": "data view"
+            }
+        }
+    },
+    "series_id": 3226739,
+    "tooltip": {
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "backgroundColor": "rgba(50,50,50,0.7)",
+        "borderColor": "#333",
+        "borderWidth": 0
+    },
+    "series": [
+        {
+            "type": "bar",
+            "data": [
+                2752.0,
+                2427.0,
+                1674.0,
+                1351.0,
+                869.0,
+                859.0,
+                763.0,
+                756.0,
+                641.0,
+                616.0
+            ],
+            "barCategoryGap": "10%",
+            "label": {
+                "normal": {
+                    "show": true,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 10
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            },
+            "markPoint": {
+                "data": []
+            },
+            "markLine": {
+                "data": []
+            },
+            "seriesId": 3226739
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                ""
+            ],
+            "selectedMode": "multiple",
+            "show": true,
+            "left": "center",
+            "top": "top",
+            "orient": "horizontal",
+            "textStyle": {
+                "fontSize": 12
+            }
+        }
+    ],
+    "animation": true,
+    "xAxis": [
+        {
+            "show": true,
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "inverse": false,
+            "boundaryGap": true,
+            "type": "category",
+            "splitLine": {
+                "show": false
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 1
+                }
+            },
+            "axisLabel": {
+                "interval": 0,
+                "rotate": 0,
+                "margin": 8,
+                "textStyle": {
+                    "fontSize": 9
+                }
+            },
+            "data": [
+                "International Movies",
+                "Dramas",
+                "Comedies",
+                "International TV Shows",
+                "Documentaries",
+                "Action & Adventure",
+                "TV Dramas",
+                "Independent Movies",
+                "Children & Family Movies",
+                "Romantic Movies"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "inverse": false,
+            "boundaryGap": true,
+            "type": "value",
+            "splitLine": {
+                "show": true
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 1
+                }
+            },
+            "axisLabel": {
+                "interval": "auto",
+                "formatter": "{value} ",
+                "rotate": 0,
+                "margin": 8,
+                "textStyle": {
+                    "fontSize": 12
+                }
+            }
+        }
+    ],
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597",
+        "#f6f5ec"
+    ]
+};
+myChart_fd31c07c7ce14fbaa5a7c595122e1d2e.setOption(option_fd31c07c7ce14fbaa5a7c595122e1d2e);
+
+    });
+</script>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>미국 외 다른 나라의 영화/TV쇼를 의미하는 International Movies 장르의 콘텐츠가 가장 많네요. International TV Show도 1351개로 4위이구요. 넷플릭스가 글로벌한 서비스이다보니 자연스레 나타난 결과인 것 같습니다.<br>
+드라마가 2위인데 1위와 별로 차이가 안나는 게 오히려 의외입니다. 3위인 코미디와도 개수 차이가 크고요.<br>
+다큐멘터리가 액션 영화보다 약간 더 많은 점, TV 드라마가 이 두 장르보다 적은 것도 개인적으로는 의외입니다🤔<br>
+넷플릭스에서 다큐멘터리가 생각보다 인기라는 얘기를 들었는데 이런 점이 반영된 것일 수도 있겠네요.</p>
+<hr>
+<p>여기까지 넷플릭스 콘텐츠 데이터를 분석해보았는데요, 생각보다 글이 길어져서 2편에서 마저 적으려고 합니다😅<br>
+읽어주셔서 감사하고 궁금하신 부분 있으면 댓글로 달아주세요!</p>
+
+</div>
+</div>
+</div>
+ 
+
