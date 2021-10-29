@@ -1,16 +1,3 @@
----
-title: "pyecharts로 넷플릭스 데이터 시각화하기"
-author_profile: true
-search: true
-categories: 
-  - Data Visualization
-tags: 
-  - pyecharts
-date: 2021-10-29
----
-
-
-
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
@@ -9396,244 +9383,244 @@ div.traceback-wrapper pre.traceback {
  *
  * Author: Jupyter Development Team
  */
- body {
-    background-color: #fff;
-    /* This makes sure that the body covers the entire window and needs to
+body {
+  background-color: #fff;
+  /* This makes sure that the body covers the entire window and needs to
        be in a different element than the display: box in wrapper below */
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    overflow: visible;
- }
- body > #header {
-    /* Initially hidden to prevent FLOUC */
-    display: none;
-    background-color: #fff;
-    /* Display over codemirror */
-    position: relative;
-    z-index: 100;
- }
- body > #header #header-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
- }
- body > #header .header-bar {
-    width: 100%;
-    height: 1px;
-    background: #e7e7e7;
-    margin-bottom: -1px;
- }
- @media print {
-    body > #header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  overflow: visible;
+}
+body > #header {
+  /* Initially hidden to prevent FLOUC */
+  display: none;
+  background-color: #fff;
+  /* Display over codemirror */
+  position: relative;
+  z-index: 100;
+}
+body > #header #header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body > #header .header-bar {
+  width: 100%;
+  height: 1px;
+  background: #e7e7e7;
+  margin-bottom: -1px;
+}
+@media print {
+  body > #header {
     display: none !important;
-    }
- }
- #header-spacer {
-    width: 100%;
-    visibility: hidden;
- }
- @media print {
-    #header-spacer {
+  }
+}
+#header-spacer {
+  width: 100%;
+  visibility: hidden;
+}
+@media print {
+  #header-spacer {
     display: none;
-    }
- }
- #ipython_notebook {
-    padding-left: 0px;
-    padding-top: 1px;
-    padding-bottom: 1px;
- }
- [dir="rtl"] #ipython_notebook {
-    margin-right: 10px;
-    margin-left: 0;
- }
- [dir="rtl"] #ipython_notebook.pull-left {
-    float: right !important;
-    float: right;
- }
- .flex-spacer {
-    flex: 1;
- }
- #noscript {
-    width: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    text-align: center;
-    font-size: 22px;
-    color: red;
-    font-weight: bold;
- }
- #ipython_notebook img {
-    height: 28px;
- }
- #site {
-    width: 100%;
-    display: none;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    overflow: auto;
- }
- @media print {
-    #site {
+  }
+}
+#ipython_notebook {
+  padding-left: 0px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+[dir="rtl"] #ipython_notebook {
+  margin-right: 10px;
+  margin-left: 0;
+}
+[dir="rtl"] #ipython_notebook.pull-left {
+  float: right !important;
+  float: right;
+}
+.flex-spacer {
+  flex: 1;
+}
+#noscript {
+  width: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+  font-size: 22px;
+  color: red;
+  font-weight: bold;
+}
+#ipython_notebook img {
+  height: 28px;
+}
+#site {
+  width: 100%;
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: auto;
+}
+@media print {
+  #site {
     height: auto !important;
-    }
- }
- /* Smaller buttons */
- .ui-button .ui-button-text {
-    padding: 0.2em 0.8em;
-    font-size: 77%;
- }
- input.ui-button {
-    padding: 0.3em 0.9em;
- }
- span#kernel_logo_widget {
-    margin: 0 10px;
- }
- span#login_widget {
-    float: right;
- }
- [dir="rtl"] span#login_widget {
-    float: left;
- }
- span#login_widget > .button,
- #logout {
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
- }
- span#login_widget > .button:focus,
- #logout:focus,
- span#login_widget > .button.focus,
- #logout.focus {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #8c8c8c;
- }
- span#login_widget > .button:hover,
- #logout:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
- }
- span#login_widget > .button:active,
- #logout:active,
- span#login_widget > .button.active,
- #logout.active,
- .open > .dropdown-togglespan#login_widget > .button,
- .open > .dropdown-toggle#logout {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
- }
- span#login_widget > .button:active:hover,
- #logout:active:hover,
- span#login_widget > .button.active:hover,
- #logout.active:hover,
- .open > .dropdown-togglespan#login_widget > .button:hover,
- .open > .dropdown-toggle#logout:hover,
- span#login_widget > .button:active:focus,
- #logout:active:focus,
- span#login_widget > .button.active:focus,
- #logout.active:focus,
- .open > .dropdown-togglespan#login_widget > .button:focus,
- .open > .dropdown-toggle#logout:focus,
- span#login_widget > .button:active.focus,
- #logout:active.focus,
- span#login_widget > .button.active.focus,
- #logout.active.focus,
- .open > .dropdown-togglespan#login_widget > .button.focus,
- .open > .dropdown-toggle#logout.focus {
-    color: #333;
-    background-color: #d4d4d4;
-    border-color: #8c8c8c;
- }
- span#login_widget > .button:active,
- #logout:active,
- span#login_widget > .button.active,
- #logout.active,
- .open > .dropdown-togglespan#login_widget > .button,
- .open > .dropdown-toggle#logout {
-    background-image: none;
- }
- span#login_widget > .button.disabled:hover,
- #logout.disabled:hover,
- span#login_widget > .button[disabled]:hover,
- #logout[disabled]:hover,
- fieldset[disabled] span#login_widget > .button:hover,
- fieldset[disabled] #logout:hover,
- span#login_widget > .button.disabled:focus,
- #logout.disabled:focus,
- span#login_widget > .button[disabled]:focus,
- #logout[disabled]:focus,
- fieldset[disabled] span#login_widget > .button:focus,
- fieldset[disabled] #logout:focus,
- span#login_widget > .button.disabled.focus,
- #logout.disabled.focus,
- span#login_widget > .button[disabled].focus,
- #logout[disabled].focus,
- fieldset[disabled] span#login_widget > .button.focus,
- fieldset[disabled] #logout.focus {
-    background-color: #fff;
-    border-color: #ccc;
- }
- span#login_widget > .button .badge,
- #logout .badge {
-    color: #fff;
-    background-color: #333;
- }
- .nav-header {
-    text-transform: none;
- }
- #header > span {
-    margin-top: 10px;
- }
- .modal_stretch .modal-dialog {
-    /* Old browsers */
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-box-align: stretch;
-    display: -moz-box;
-    -moz-box-orient: vertical;
-    -moz-box-align: stretch;
-    display: box;
-    box-orient: vertical;
-    box-align: stretch;
-    /* Modern browsers */
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    min-height: 80vh;
- }
- .modal_stretch .modal-dialog .modal-body {
-    max-height: calc(100vh - 200px);
-    overflow: auto;
-    flex: 1;
- }
- .modal-header {
-    cursor: move;
- }
- @media (min-width: 768px) {
-    .modal .modal-dialog {
+  }
+}
+/* Smaller buttons */
+.ui-button .ui-button-text {
+  padding: 0.2em 0.8em;
+  font-size: 77%;
+}
+input.ui-button {
+  padding: 0.3em 0.9em;
+}
+span#kernel_logo_widget {
+  margin: 0 10px;
+}
+span#login_widget {
+  float: right;
+}
+[dir="rtl"] span#login_widget {
+  float: left;
+}
+span#login_widget > .button,
+#logout {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+span#login_widget > .button:focus,
+#logout:focus,
+span#login_widget > .button.focus,
+#logout.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+span#login_widget > .button:hover,
+#logout:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+span#login_widget > .button:active,
+#logout:active,
+span#login_widget > .button.active,
+#logout.active,
+.open > .dropdown-togglespan#login_widget > .button,
+.open > .dropdown-toggle#logout {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+span#login_widget > .button:active:hover,
+#logout:active:hover,
+span#login_widget > .button.active:hover,
+#logout.active:hover,
+.open > .dropdown-togglespan#login_widget > .button:hover,
+.open > .dropdown-toggle#logout:hover,
+span#login_widget > .button:active:focus,
+#logout:active:focus,
+span#login_widget > .button.active:focus,
+#logout.active:focus,
+.open > .dropdown-togglespan#login_widget > .button:focus,
+.open > .dropdown-toggle#logout:focus,
+span#login_widget > .button:active.focus,
+#logout:active.focus,
+span#login_widget > .button.active.focus,
+#logout.active.focus,
+.open > .dropdown-togglespan#login_widget > .button.focus,
+.open > .dropdown-toggle#logout.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+span#login_widget > .button:active,
+#logout:active,
+span#login_widget > .button.active,
+#logout.active,
+.open > .dropdown-togglespan#login_widget > .button,
+.open > .dropdown-toggle#logout {
+  background-image: none;
+}
+span#login_widget > .button.disabled:hover,
+#logout.disabled:hover,
+span#login_widget > .button[disabled]:hover,
+#logout[disabled]:hover,
+fieldset[disabled] span#login_widget > .button:hover,
+fieldset[disabled] #logout:hover,
+span#login_widget > .button.disabled:focus,
+#logout.disabled:focus,
+span#login_widget > .button[disabled]:focus,
+#logout[disabled]:focus,
+fieldset[disabled] span#login_widget > .button:focus,
+fieldset[disabled] #logout:focus,
+span#login_widget > .button.disabled.focus,
+#logout.disabled.focus,
+span#login_widget > .button[disabled].focus,
+#logout[disabled].focus,
+fieldset[disabled] span#login_widget > .button.focus,
+fieldset[disabled] #logout.focus {
+  background-color: #fff;
+  border-color: #ccc;
+}
+span#login_widget > .button .badge,
+#logout .badge {
+  color: #fff;
+  background-color: #333;
+}
+.nav-header {
+  text-transform: none;
+}
+#header > span {
+  margin-top: 10px;
+}
+.modal_stretch .modal-dialog {
+  /* Old browsers */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  -moz-box-align: stretch;
+  display: box;
+  box-orient: vertical;
+  box-align: stretch;
+  /* Modern browsers */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 80vh;
+}
+.modal_stretch .modal-dialog .modal-body {
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  flex: 1;
+}
+.modal-header {
+  cursor: move;
+}
+@media (min-width: 768px) {
+  .modal .modal-dialog {
     width: 700px;
-    }
- }
- @media (min-width: 768px) {
-    select.form-control {
+  }
+}
+@media (min-width: 768px) {
+  select.form-control {
     margin-left: 12px;
     margin-right: 12px;
-    }
- }
- /*!
- *
+  }
+}
+/*!
+*
 * IPython auth
 *
 */
@@ -9694,404 +9681,404 @@ div.traceback-wrapper pre.traceback {
  *
  * Author: Jupyter Development Team
  */
- ul#tabs {
-    margin-bottom: 4px;
- }
- ul#tabs a {
-    padding-top: 6px;
-    padding-bottom: 4px;
- }
- [dir="rtl"] ul#tabs.nav-tabs > li {
-    float: right;
- }
- [dir="rtl"] ul#tabs.nav.nav-tabs {
-    padding-right: 0;
- }
- ul.breadcrumb a:focus,
- ul.breadcrumb a:hover {
-    text-decoration: none;
- }
- ul.breadcrumb i.icon-home {
-    font-size: 16px;
-    margin-right: 4px;
- }
- ul.breadcrumb span {
-    color: #5e5e5e;
- }
- .list_toolbar {
-    padding: 4px 0 4px 0;
-    vertical-align: middle;
- }
- .list_toolbar .tree-buttons {
-    padding-top: 1px;
- }
- [dir="rtl"] .list_toolbar .tree-buttons .pull-right {
-    float: left !important;
-    float: left;
- }
- [dir="rtl"] .list_toolbar .col-sm-4,
- [dir="rtl"] .list_toolbar .col-sm-8 {
-    float: right;
- }
- .dynamic-buttons {
-    padding-top: 3px;
-    display: inline-block;
- }
- .list_toolbar [class*="span"] {
-    min-height: 24px;
- }
- .list_header {
-    font-weight: bold;
-    background-color: #EEE;
- }
- .list_placeholder {
-    font-weight: bold;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 7px;
-    padding-right: 7px;
- }
- .list_container {
-    margin-top: 4px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
- }
- .list_container > div {
-    border-bottom: 1px solid #ddd;
- }
- .list_container > div:hover .list-item {
-    background-color: red;
- }
- .list_container > div:last-child {
-    border: none;
- }
- .list_item:hover .list_item {
-    background-color: #ddd;
- }
- .list_item a {
-    text-decoration: none;
- }
- .list_item:hover {
-    background-color: #fafafa;
- }
- .list_header > div,
- .list_item > div {
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 7px;
-    padding-right: 7px;
-    line-height: 22px;
- }
- .list_header > div input,
- .list_item > div input {
-    margin-right: 7px;
-    margin-left: 14px;
-    vertical-align: text-bottom;
-    line-height: 22px;
-    position: relative;
-    top: -1px;
- }
- .list_header > div .item_link,
- .list_item > div .item_link {
-    margin-left: -1px;
-    vertical-align: baseline;
-    line-height: 22px;
- }
- [dir="rtl"] .list_item > div input {
-    margin-right: 0;
- }
- .new-file input[type=checkbox] {
-    visibility: hidden;
- }
- .item_name {
-    line-height: 22px;
-    height: 24px;
- }
- .item_icon {
-    font-size: 14px;
-    color: #5e5e5e;
-    margin-right: 7px;
-    margin-left: 7px;
-    line-height: 22px;
-    vertical-align: baseline;
- }
- .item_modified {
-    margin-right: 7px;
-    margin-left: 7px;
- }
- [dir="rtl"] .item_modified.pull-right {
-    float: left !important;
-    float: left;
- }
- .item_buttons {
-    line-height: 1em;
-    margin-left: -5px;
- }
- .item_buttons .btn,
- .item_buttons .btn-group,
- .item_buttons .input-group {
-    float: left;
- }
- .item_buttons > .btn,
- .item_buttons > .btn-group,
- .item_buttons > .input-group {
-    margin-left: 5px;
- }
- .item_buttons .btn {
-    min-width: 13ex;
- }
- .item_buttons .running-indicator {
-    padding-top: 4px;
-    color: #5cb85c;
- }
- .item_buttons .kernel-name {
-    padding-top: 4px;
-    color: #5bc0de;
-    margin-right: 7px;
-    float: left;
- }
- [dir="rtl"] .item_buttons.pull-right {
-    float: left !important;
-    float: left;
- }
- [dir="rtl"] .item_buttons .kernel-name {
-    margin-left: 7px;
-    float: right;
- }
- .toolbar_info {
-    height: 24px;
-    line-height: 24px;
- }
- .list_item input:not([type=checkbox]) {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    height: 22px;
-    line-height: 14px;
-    margin: 0px;
- }
- .highlight_text {
-    color: blue;
- }
- #project_name {
-    display: inline-block;
-    padding-left: 7px;
-    margin-left: -2px;
- }
- #project_name > .breadcrumb {
-    padding: 0px;
-    margin-bottom: 0px;
-    background-color: transparent;
-    font-weight: bold;
- }
- .sort_button {
-    display: inline-block;
-    padding-left: 7px;
- }
- [dir="rtl"] .sort_button.pull-right {
-    float: left !important;
-    float: left;
- }
- #tree-selector {
-    padding-right: 0px;
- }
- #button-select-all {
-    min-width: 50px;
- }
- [dir="rtl"] #button-select-all.btn {
-    float: right ;
- }
- #select-all {
-    margin-left: 7px;
-    margin-right: 2px;
-    margin-top: 2px;
-    height: 16px;
- }
- [dir="rtl"] #select-all.pull-left {
-    float: right !important;
-    float: right;
- }
- .menu_icon {
-    margin-right: 2px;
- }
- .tab-content .row {
-    margin-left: 0px;
-    margin-right: 0px;
- }
- .folder_icon:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f114";
- }
- .folder_icon:before.fa-pull-left {
-    margin-right: .3em;
- }
- .folder_icon:before.fa-pull-right {
-    margin-left: .3em;
- }
- .folder_icon:before.pull-left {
-    margin-right: .3em;
- }
- .folder_icon:before.pull-right {
-    margin-left: .3em;
- }
- .notebook_icon:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f02d";
-    position: relative;
-    top: -1px;
- }
- .notebook_icon:before.fa-pull-left {
-    margin-right: .3em;
- }
- .notebook_icon:before.fa-pull-right {
-    margin-left: .3em;
- }
- .notebook_icon:before.pull-left {
-    margin-right: .3em;
- }
- .notebook_icon:before.pull-right {
-    margin-left: .3em;
- }
- .running_notebook_icon:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f02d";
-    position: relative;
-    top: -1px;
-    color: #5cb85c;
- }
- .running_notebook_icon:before.fa-pull-left {
-    margin-right: .3em;
- }
- .running_notebook_icon:before.fa-pull-right {
-    margin-left: .3em;
- }
- .running_notebook_icon:before.pull-left {
-    margin-right: .3em;
- }
- .running_notebook_icon:before.pull-right {
-    margin-left: .3em;
- }
- .file_icon:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f016";
-    position: relative;
-    top: -2px;
- }
- .file_icon:before.fa-pull-left {
-    margin-right: .3em;
- }
- .file_icon:before.fa-pull-right {
-    margin-left: .3em;
- }
- .file_icon:before.pull-left {
-    margin-right: .3em;
- }
- .file_icon:before.pull-right {
-    margin-left: .3em;
- }
- #notebook_toolbar .pull-right {
-    padding-top: 0px;
-    margin-right: -1px;
- }
- ul#new-menu {
-    left: auto;
-    right: 0;
- }
- #new-menu .dropdown-header {
-    font-size: 10px;
-    border-bottom: 1px solid #e5e5e5;
-    padding: 0 0 3px;
-    margin: -3px 20px 0;
- }
- .kernel-menu-icon {
-    padding-right: 12px;
-    width: 24px;
-    content: "\f096";
- }
- .kernel-menu-icon:before {
-    content: "\f096";
- }
- .kernel-menu-icon-current:before {
-    content: "\f00c";
- }
- #tab_content {
-    padding-top: 20px;
- }
- #running .panel-group .panel {
-    margin-top: 3px;
-    margin-bottom: 1em;
- }
- #running .panel-group .panel .panel-heading {
-    background-color: #EEE;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 7px;
-    padding-right: 7px;
-    line-height: 22px;
- }
- #running .panel-group .panel .panel-heading a:focus,
- #running .panel-group .panel .panel-heading a:hover {
-    text-decoration: none;
- }
- #running .panel-group .panel .panel-body {
-    padding: 0px;
- }
- #running .panel-group .panel .panel-body .list_container {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: 0px;
-    border-radius: 0px;
- }
- #running .panel-group .panel .panel-body .list_container .list_item {
-    border-bottom: 1px solid #ddd;
- }
- #running .panel-group .panel .panel-body .list_container .list_item:last-child {
-    border-bottom: 0px;
- }
- .delete-button {
-    display: none;
- }
- .duplicate-button {
-    display: none;
- }
- .rename-button {
-    display: none;
- }
- .move-button {
-    display: none;
- }
- .download-button {
-    display: none;
- }
- .shutdown-button {
-    display: none;
- }
- .dynamic-instructions {
-    display: inline-block;
-    padding-top: 4px;
- }
- /*!
- *
+ul#tabs {
+  margin-bottom: 4px;
+}
+ul#tabs a {
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+[dir="rtl"] ul#tabs.nav-tabs > li {
+  float: right;
+}
+[dir="rtl"] ul#tabs.nav.nav-tabs {
+  padding-right: 0;
+}
+ul.breadcrumb a:focus,
+ul.breadcrumb a:hover {
+  text-decoration: none;
+}
+ul.breadcrumb i.icon-home {
+  font-size: 16px;
+  margin-right: 4px;
+}
+ul.breadcrumb span {
+  color: #5e5e5e;
+}
+.list_toolbar {
+  padding: 4px 0 4px 0;
+  vertical-align: middle;
+}
+.list_toolbar .tree-buttons {
+  padding-top: 1px;
+}
+[dir="rtl"] .list_toolbar .tree-buttons .pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .list_toolbar .col-sm-4,
+[dir="rtl"] .list_toolbar .col-sm-8 {
+  float: right;
+}
+.dynamic-buttons {
+  padding-top: 3px;
+  display: inline-block;
+}
+.list_toolbar [class*="span"] {
+  min-height: 24px;
+}
+.list_header {
+  font-weight: bold;
+  background-color: #EEE;
+}
+.list_placeholder {
+  font-weight: bold;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.list_container {
+  margin-top: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.list_container > div {
+  border-bottom: 1px solid #ddd;
+}
+.list_container > div:hover .list-item {
+  background-color: red;
+}
+.list_container > div:last-child {
+  border: none;
+}
+.list_item:hover .list_item {
+  background-color: #ddd;
+}
+.list_item a {
+  text-decoration: none;
+}
+.list_item:hover {
+  background-color: #fafafa;
+}
+.list_header > div,
+.list_item > div {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 22px;
+}
+.list_header > div input,
+.list_item > div input {
+  margin-right: 7px;
+  margin-left: 14px;
+  vertical-align: text-bottom;
+  line-height: 22px;
+  position: relative;
+  top: -1px;
+}
+.list_header > div .item_link,
+.list_item > div .item_link {
+  margin-left: -1px;
+  vertical-align: baseline;
+  line-height: 22px;
+}
+[dir="rtl"] .list_item > div input {
+  margin-right: 0;
+}
+.new-file input[type=checkbox] {
+  visibility: hidden;
+}
+.item_name {
+  line-height: 22px;
+  height: 24px;
+}
+.item_icon {
+  font-size: 14px;
+  color: #5e5e5e;
+  margin-right: 7px;
+  margin-left: 7px;
+  line-height: 22px;
+  vertical-align: baseline;
+}
+.item_modified {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+[dir="rtl"] .item_modified.pull-right {
+  float: left !important;
+  float: left;
+}
+.item_buttons {
+  line-height: 1em;
+  margin-left: -5px;
+}
+.item_buttons .btn,
+.item_buttons .btn-group,
+.item_buttons .input-group {
+  float: left;
+}
+.item_buttons > .btn,
+.item_buttons > .btn-group,
+.item_buttons > .input-group {
+  margin-left: 5px;
+}
+.item_buttons .btn {
+  min-width: 13ex;
+}
+.item_buttons .running-indicator {
+  padding-top: 4px;
+  color: #5cb85c;
+}
+.item_buttons .kernel-name {
+  padding-top: 4px;
+  color: #5bc0de;
+  margin-right: 7px;
+  float: left;
+}
+[dir="rtl"] .item_buttons.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .item_buttons .kernel-name {
+  margin-left: 7px;
+  float: right;
+}
+.toolbar_info {
+  height: 24px;
+  line-height: 24px;
+}
+.list_item input:not([type=checkbox]) {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 22px;
+  line-height: 14px;
+  margin: 0px;
+}
+.highlight_text {
+  color: blue;
+}
+#project_name {
+  display: inline-block;
+  padding-left: 7px;
+  margin-left: -2px;
+}
+#project_name > .breadcrumb {
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: transparent;
+  font-weight: bold;
+}
+.sort_button {
+  display: inline-block;
+  padding-left: 7px;
+}
+[dir="rtl"] .sort_button.pull-right {
+  float: left !important;
+  float: left;
+}
+#tree-selector {
+  padding-right: 0px;
+}
+#button-select-all {
+  min-width: 50px;
+}
+[dir="rtl"] #button-select-all.btn {
+  float: right ;
+}
+#select-all {
+  margin-left: 7px;
+  margin-right: 2px;
+  margin-top: 2px;
+  height: 16px;
+}
+[dir="rtl"] #select-all.pull-left {
+  float: right !important;
+  float: right;
+}
+.menu_icon {
+  margin-right: 2px;
+}
+.tab-content .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.folder_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f114";
+}
+.folder_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.folder_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.folder_icon:before.pull-left {
+  margin-right: .3em;
+}
+.folder_icon:before.pull-right {
+  margin-left: .3em;
+}
+.notebook_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f02d";
+  position: relative;
+  top: -1px;
+}
+.notebook_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.notebook_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.notebook_icon:before.pull-left {
+  margin-right: .3em;
+}
+.notebook_icon:before.pull-right {
+  margin-left: .3em;
+}
+.running_notebook_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f02d";
+  position: relative;
+  top: -1px;
+  color: #5cb85c;
+}
+.running_notebook_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.running_notebook_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.running_notebook_icon:before.pull-left {
+  margin-right: .3em;
+}
+.running_notebook_icon:before.pull-right {
+  margin-left: .3em;
+}
+.file_icon:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f016";
+  position: relative;
+  top: -2px;
+}
+.file_icon:before.fa-pull-left {
+  margin-right: .3em;
+}
+.file_icon:before.fa-pull-right {
+  margin-left: .3em;
+}
+.file_icon:before.pull-left {
+  margin-right: .3em;
+}
+.file_icon:before.pull-right {
+  margin-left: .3em;
+}
+#notebook_toolbar .pull-right {
+  padding-top: 0px;
+  margin-right: -1px;
+}
+ul#new-menu {
+  left: auto;
+  right: 0;
+}
+#new-menu .dropdown-header {
+  font-size: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 3px;
+  margin: -3px 20px 0;
+}
+.kernel-menu-icon {
+  padding-right: 12px;
+  width: 24px;
+  content: "\f096";
+}
+.kernel-menu-icon:before {
+  content: "\f096";
+}
+.kernel-menu-icon-current:before {
+  content: "\f00c";
+}
+#tab_content {
+  padding-top: 20px;
+}
+#running .panel-group .panel {
+  margin-top: 3px;
+  margin-bottom: 1em;
+}
+#running .panel-group .panel .panel-heading {
+  background-color: #EEE;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 22px;
+}
+#running .panel-group .panel .panel-heading a:focus,
+#running .panel-group .panel .panel-heading a:hover {
+  text-decoration: none;
+}
+#running .panel-group .panel .panel-body {
+  padding: 0px;
+}
+#running .panel-group .panel .panel-body .list_container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+  border-radius: 0px;
+}
+#running .panel-group .panel .panel-body .list_container .list_item {
+  border-bottom: 1px solid #ddd;
+}
+#running .panel-group .panel .panel-body .list_container .list_item:last-child {
+  border-bottom: 0px;
+}
+.delete-button {
+  display: none;
+}
+.duplicate-button {
+  display: none;
+}
+.rename-button {
+  display: none;
+}
+.move-button {
+  display: none;
+}
+.download-button {
+  display: none;
+}
+.shutdown-button {
+  display: none;
+}
+.dynamic-instructions {
+  display: inline-block;
+  padding-top: 4px;
+}
+/*!
+*
 * IPython text editor webapp
 *
 */
@@ -10676,56 +10663,56 @@ div.input_area > div.highlight > pre {
  *      vertical-align: bottom;
  * }
  */
- .CodeMirror {
-    line-height: 1.21429em;
-    /* Changed from 1em to our global default */
-    font-size: 14px;
-    height: auto;
-    /* Changed to auto to autogrow */
-    background: none;
-    /* Changed from white to allow our bg to show through */
- }
- .CodeMirror-scroll {
-    /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
-    /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
-    overflow-y: hidden;
-    overflow-x: auto;
- }
- .CodeMirror-lines {
-    /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
-    /* we have set a different line-height and want this to scale with that. */
-    /* Note that this should set vertical padding only, since CodeMirror assumes
+.CodeMirror {
+  line-height: 1.21429em;
+  /* Changed from 1em to our global default */
+  font-size: 14px;
+  height: auto;
+  /* Changed to auto to autogrow */
+  background: none;
+  /* Changed from white to allow our bg to show through */
+}
+.CodeMirror-scroll {
+  /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
+  /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+.CodeMirror-lines {
+  /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
+  /* we have set a different line-height and want this to scale with that. */
+  /* Note that this should set vertical padding only, since CodeMirror assumes
        that horizontal padding will be set on CodeMirror pre */
-    padding: 0.4em 0;
- }
- .CodeMirror-linenumber {
-    padding: 0 8px 0 4px;
- }
- .CodeMirror-gutters {
-    border-bottom-left-radius: 2px;
-    border-top-left-radius: 2px;
- }
- .CodeMirror pre {
-    /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
+  padding: 0.4em 0;
+}
+.CodeMirror-linenumber {
+  padding: 0 8px 0 4px;
+}
+.CodeMirror-gutters {
+  border-bottom-left-radius: 2px;
+  border-top-left-radius: 2px;
+}
+.CodeMirror pre {
+  /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
     use .CodeMirror-lines for vertical */
-    padding: 0 0.4em;
-    border: 0;
-    border-radius: 0;
- }
- .CodeMirror-cursor {
-    border-left: 1.4px solid black;
- }
- @media screen and (min-width: 2138px) and (max-width: 4319px) {
-    .CodeMirror-cursor {
+  padding: 0 0.4em;
+  border: 0;
+  border-radius: 0;
+}
+.CodeMirror-cursor {
+  border-left: 1.4px solid black;
+}
+@media screen and (min-width: 2138px) and (max-width: 4319px) {
+  .CodeMirror-cursor {
     border-left: 2px solid black;
-    }
- }
- @media screen and (min-width: 4320px) {
-    .CodeMirror-cursor {
+  }
+}
+@media screen and (min-width: 4320px) {
+  .CodeMirror-cursor {
     border-left: 4px solid black;
-    }
- }
- /*
+  }
+}
+/*
 
 Original style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 Adapted from GitHub theme
@@ -12702,264 +12689,264 @@ li.pulse.open > a.dropdown-toggle {
  *
  * Author: Jupyter Development Team
  */
- /** WARNING IF YOU ARE EDITTING THIS FILE, if this is a .css file, It has a lot
+/** WARNING IF YOU ARE EDITTING THIS FILE, if this is a .css file, It has a lot
  * of chance of beeing generated from the ../less/[samename].less file, you can
  * try to get back the less file by reverting somme commit in history
  **/
- /*
+/*
  * We'll try to get something pretty, so we
  * have some strange css to have the scroll bar on
  * the left with fix button on the top right of the tooltip
  */
-    @-moz-keyframes fadeOut {
-    from {
+@-moz-keyframes fadeOut {
+  from {
     opacity: 1;
-    }
-    to {
+  }
+  to {
     opacity: 0;
-    }
-    }
-    @-webkit-keyframes fadeOut {
-    from {
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
     opacity: 1;
-    }
-    to {
+  }
+  to {
     opacity: 0;
-    }
-    }
-    @-moz-keyframes fadeIn {
-    from {
+  }
+}
+@-moz-keyframes fadeIn {
+  from {
     opacity: 0;
-    }
-    to {
+  }
+  to {
     opacity: 1;
-    }
-    }
-    @-webkit-keyframes fadeIn {
-    from {
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
     opacity: 0;
-    }
-    to {
+  }
+  to {
     opacity: 1;
-    }
-    }
-    /*properties of tooltip after "expand"*/
-    .bigtooltip {
-    overflow: auto;
-    height: 200px;
-    -webkit-transition-property: height;
-    -webkit-transition-duration: 500ms;
-    -moz-transition-property: height;
-    -moz-transition-duration: 500ms;
-    transition-property: height;
-    transition-duration: 500ms;
-    }
-    /*properties of tooltip before "expand"*/
-    .smalltooltip {
-    -webkit-transition-property: height;
-    -webkit-transition-duration: 500ms;
-    -moz-transition-property: height;
-    -moz-transition-duration: 500ms;
-    transition-property: height;
-    transition-duration: 500ms;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    height: 80px;
-    }
-    .tooltipbuttons {
-    position: absolute;
-    padding-right: 15px;
-    top: 0px;
-    right: 0px;
-    }
-    .tooltiptext {
-    /*avoid the button to overlap on some docstring*/
-    padding-right: 30px;
-    }
-    .ipython_tooltip {
-    max-width: 700px;
-    /*fade-in animation when inserted*/
-    -webkit-animation: fadeOut 400ms;
-    -moz-animation: fadeOut 400ms;
-    animation: fadeOut 400ms;
-    -webkit-animation: fadeIn 400ms;
-    -moz-animation: fadeIn 400ms;
-    animation: fadeIn 400ms;
-    vertical-align: middle;
-    background-color: #f7f7f7;
-    overflow: visible;
-    border: #ababab 1px solid;
-    outline: none;
-    padding: 3px;
-    margin: 0px;
-    padding-left: 7px;
-    font-family: monospace;
-    min-height: 50px;
-    -moz-box-shadow: 0px 6px 10px -1px #adadad;
-    -webkit-box-shadow: 0px 6px 10px -1px #adadad;
-    box-shadow: 0px 6px 10px -1px #adadad;
-    border-radius: 2px;
-    position: absolute;
-    z-index: 1000;
-    }
-    .ipython_tooltip a {
-    float: right;
-    }
-    .ipython_tooltip .tooltiptext pre {
-    border: 0;
-    border-radius: 0;
-    font-size: 100%;
-    background-color: #f7f7f7;
-    }
-    .pretooltiparrow {
-    left: 0px;
-    margin: 0px;
-    top: -16px;
-    width: 40px;
-    height: 16px;
-    overflow: hidden;
-    position: absolute;
-    }
-    .pretooltiparrow:before {
-    background-color: #f7f7f7;
-    border: 1px #ababab solid;
-    z-index: 11;
-    content: "";
-    position: absolute;
-    left: 15px;
-    top: 10px;
-    width: 25px;
-    height: 25px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    }
-    ul.typeahead-list i {
-    margin-left: -10px;
-    width: 18px;
-    }
-    [dir="rtl"] ul.typeahead-list i {
-    margin-left: 0;
-    margin-right: -10px;
-    }
-    ul.typeahead-list {
-    max-height: 80vh;
-    overflow: auto;
-    }
-    ul.typeahead-list > li > a {
-    /** Firefox bug **/
-    /* see https://github.com/jupyter/notebook/issues/559 */
-    white-space: normal;
-    }
-    ul.typeahead-list  > li > a.pull-right {
-    float: left !important;
-    float: left;
-    }
-    [dir="rtl"] .typeahead-list {
-    text-align: right;
-    }
-    .cmd-palette .modal-body {
-    padding: 7px;
-    }
-    .cmd-palette form {
-    background: white;
-    }
-    .cmd-palette input {
-    outline: none;
-    }
-    .no-shortcut {
-    min-width: 20px;
-    color: transparent;
-    }
-    [dir="rtl"] .no-shortcut.pull-right {
-    float: left !important;
-    float: left;
-    }
-    [dir="rtl"] .command-shortcut.pull-right {
-    float: left !important;
-    float: left;
-    }
-    .command-shortcut:before {
-    content: "(command mode)";
-    padding-right: 3px;
-    color: #777777;
-    }
-    .edit-shortcut:before {
-    content: "(edit)";
-    padding-right: 3px;
-    color: #777777;
-    }
-    [dir="rtl"] .edit-shortcut.pull-right {
-    float: left !important;
-    float: left;
-    }
-    #find-and-replace #replace-preview .match,
-    #find-and-replace #replace-preview .insert {
-    background-color: #BBDEFB;
-    border-color: #90CAF9;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 0px;
-    }
-    [dir="ltr"] #find-and-replace .input-group-btn + .form-control {
-    border-left: none;
-    }
-    [dir="rtl"] #find-and-replace .input-group-btn + .form-control {
-    border-right: none;
-    }
-    #find-and-replace #replace-preview .replace .match {
-    background-color: #FFCDD2;
-    border-color: #EF9A9A;
-    border-radius: 0px;
-    }
-    #find-and-replace #replace-preview .replace .insert {
-    background-color: #C8E6C9;
-    border-color: #A5D6A7;
-    border-radius: 0px;
-    }
-    #find-and-replace #replace-preview {
-    max-height: 60vh;
-    overflow: auto;
-    }
-    #find-and-replace #replace-preview pre {
-    padding: 5px 10px;
-    }
-    .terminal-app {
-    background: #EEE;
-    }
-    .terminal-app #header {
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
-    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
-    }
-    .terminal-app .terminal {
-    width: 100%;
-    float: left;
-    font-family: monospace;
-    color: white;
-    background: black;
-    padding: 0.4em;
-    border-radius: 2px;
-    -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
-    box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
-    }
-    .terminal-app .terminal,
-    .terminal-app .terminal dummy-screen {
-    line-height: 1em;
-    font-size: 14px;
-    }
-    .terminal-app .terminal .xterm-rows {
-    padding: 10px;
-    }
-    .terminal-app .terminal-cursor {
-    color: black;
-    background: white;
-    }
-    .terminal-app #terminado-container {
-    margin-top: 20px;
-    }
-    /*# sourceMappingURL=style.min.css.map */
+  }
+}
+/*properties of tooltip after "expand"*/
+.bigtooltip {
+  overflow: auto;
+  height: 200px;
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-property: height;
+  -moz-transition-duration: 500ms;
+  transition-property: height;
+  transition-duration: 500ms;
+}
+/*properties of tooltip before "expand"*/
+.smalltooltip {
+  -webkit-transition-property: height;
+  -webkit-transition-duration: 500ms;
+  -moz-transition-property: height;
+  -moz-transition-duration: 500ms;
+  transition-property: height;
+  transition-duration: 500ms;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 80px;
+}
+.tooltipbuttons {
+  position: absolute;
+  padding-right: 15px;
+  top: 0px;
+  right: 0px;
+}
+.tooltiptext {
+  /*avoid the button to overlap on some docstring*/
+  padding-right: 30px;
+}
+.ipython_tooltip {
+  max-width: 700px;
+  /*fade-in animation when inserted*/
+  -webkit-animation: fadeOut 400ms;
+  -moz-animation: fadeOut 400ms;
+  animation: fadeOut 400ms;
+  -webkit-animation: fadeIn 400ms;
+  -moz-animation: fadeIn 400ms;
+  animation: fadeIn 400ms;
+  vertical-align: middle;
+  background-color: #f7f7f7;
+  overflow: visible;
+  border: #ababab 1px solid;
+  outline: none;
+  padding: 3px;
+  margin: 0px;
+  padding-left: 7px;
+  font-family: monospace;
+  min-height: 50px;
+  -moz-box-shadow: 0px 6px 10px -1px #adadad;
+  -webkit-box-shadow: 0px 6px 10px -1px #adadad;
+  box-shadow: 0px 6px 10px -1px #adadad;
+  border-radius: 2px;
+  position: absolute;
+  z-index: 1000;
+}
+.ipython_tooltip a {
+  float: right;
+}
+.ipython_tooltip .tooltiptext pre {
+  border: 0;
+  border-radius: 0;
+  font-size: 100%;
+  background-color: #f7f7f7;
+}
+.pretooltiparrow {
+  left: 0px;
+  margin: 0px;
+  top: -16px;
+  width: 40px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+}
+.pretooltiparrow:before {
+  background-color: #f7f7f7;
+  border: 1px #ababab solid;
+  z-index: 11;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+ul.typeahead-list i {
+  margin-left: -10px;
+  width: 18px;
+}
+[dir="rtl"] ul.typeahead-list i {
+  margin-left: 0;
+  margin-right: -10px;
+}
+ul.typeahead-list {
+  max-height: 80vh;
+  overflow: auto;
+}
+ul.typeahead-list > li > a {
+  /** Firefox bug **/
+  /* see https://github.com/jupyter/notebook/issues/559 */
+  white-space: normal;
+}
+ul.typeahead-list  > li > a.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .typeahead-list {
+  text-align: right;
+}
+.cmd-palette .modal-body {
+  padding: 7px;
+}
+.cmd-palette form {
+  background: white;
+}
+.cmd-palette input {
+  outline: none;
+}
+.no-shortcut {
+  min-width: 20px;
+  color: transparent;
+}
+[dir="rtl"] .no-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+[dir="rtl"] .command-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+.command-shortcut:before {
+  content: "(command mode)";
+  padding-right: 3px;
+  color: #777777;
+}
+.edit-shortcut:before {
+  content: "(edit)";
+  padding-right: 3px;
+  color: #777777;
+}
+[dir="rtl"] .edit-shortcut.pull-right {
+  float: left !important;
+  float: left;
+}
+#find-and-replace #replace-preview .match,
+#find-and-replace #replace-preview .insert {
+  background-color: #BBDEFB;
+  border-color: #90CAF9;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0px;
+}
+[dir="ltr"] #find-and-replace .input-group-btn + .form-control {
+  border-left: none;
+}
+[dir="rtl"] #find-and-replace .input-group-btn + .form-control {
+  border-right: none;
+}
+#find-and-replace #replace-preview .replace .match {
+  background-color: #FFCDD2;
+  border-color: #EF9A9A;
+  border-radius: 0px;
+}
+#find-and-replace #replace-preview .replace .insert {
+  background-color: #C8E6C9;
+  border-color: #A5D6A7;
+  border-radius: 0px;
+}
+#find-and-replace #replace-preview {
+  max-height: 60vh;
+  overflow: auto;
+}
+#find-and-replace #replace-preview pre {
+  padding: 5px 10px;
+}
+.terminal-app {
+  background: #EEE;
+}
+.terminal-app #header {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+}
+.terminal-app .terminal {
+  width: 100%;
+  float: left;
+  font-family: monospace;
+  color: white;
+  background: black;
+  padding: 0.4em;
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
+  box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.4);
+}
+.terminal-app .terminal,
+.terminal-app .terminal dummy-screen {
+  line-height: 1em;
+  font-size: 14px;
+}
+.terminal-app .terminal .xterm-rows {
+  padding: 10px;
+}
+.terminal-app .terminal-cursor {
+  color: black;
+  background: white;
+}
+.terminal-app #terminado-container {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.min.css.map */
     </style>
 <style type="text/css">
     pre { line-height: 125%; }
@@ -13201,7 +13188,7 @@ pyecharts를 이용해 간단하게 시각화하는 내용이어서 쉽게 따�
     .dataframe tbody tr th {
         vertical-align: top;
     }
-    
+
     .dataframe thead th {
         text-align: right;
     }
@@ -13445,7 +13432,7 @@ comma를 기준으로 country 컬럼을 구분해 준 뒤 국가별로 영화/TV
 
 <script>
     require(['echarts'], function(echarts) {
-
+        
 var myChart_39b70625526b4ceda4e9b7ee328d4b87 = echarts.init(document.getElementById('39b70625526b4ceda4e9b7ee328d4b87'), 'light', {renderer: 'canvas'});
 
 var option_39b70625526b4ceda4e9b7ee328d4b87 = {
@@ -13765,7 +13752,7 @@ myChart_39b70625526b4ceda4e9b7ee328d4b87.setOption(option_39b70625526b4ceda4e9b7
 
 <script>
     require(['echarts'], function(echarts) {
-
+        
 var myChart_a70c32d6901442449649dcfa5c836552 = echarts.init(document.getElementById('a70c32d6901442449649dcfa5c836552'), 'light', {renderer: 'canvas'});
 
 var option_a70c32d6901442449649dcfa5c836552 = {
@@ -14049,7 +14036,7 @@ myChart_a70c32d6901442449649dcfa5c836552.setOption(option_a70c32d6901442449649dc
 
 <script>
     require(['echarts'], function(echarts) {
-
+        
 var myChart_0afa8eeac1104632b2276413e8485ac0 = echarts.init(document.getElementById('0afa8eeac1104632b2276413e8485ac0'), 'light', {renderer: 'canvas'});
 
 var option_0afa8eeac1104632b2276413e8485ac0 = {
@@ -14307,7 +14294,7 @@ myChart_0afa8eeac1104632b2276413e8485ac0.setOption(option_0afa8eeac1104632b22764
 
 <script>
     require(['echarts'], function(echarts) {
-
+        
 var myChart_b080c58c457c4444863f7495bfe0b132 = echarts.init(document.getElementById('b080c58c457c4444863f7495bfe0b132'), 'light', {renderer: 'canvas'});
 
 var option_b080c58c457c4444863f7495bfe0b132 = {
