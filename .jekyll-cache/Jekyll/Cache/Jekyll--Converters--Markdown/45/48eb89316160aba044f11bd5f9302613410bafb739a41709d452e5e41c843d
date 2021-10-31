@@ -1,4 +1,4 @@
-I"~“<p>A variety of common markup showing how the theme styles them.</p>
+I"—<p>A variety of common markup showing how the theme styles them.</p>
 
 <h1 id="header-one">Header one</h1>
 
@@ -493,6 +493,21 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/feed.xml" rel="permalink"></a>
+      
+    </h2>
+    
+
+
+    
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/" rel="permalink"></a>
       
     </h2>
@@ -501,6 +516,21 @@
 
     <p class="archive__item-excerpt" itemprop="description">A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios. Latest release v4.24.0
 </p>
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/minimal-mistakes/" rel="permalink"></a>
+      
+    </h2>
+    
+
+
+    
   </article>
 </div>
 
@@ -539,7 +569,22 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/minimal-mistakes/" rel="permalink"></a>
+        <a href="/assets/css/jupyter-highlighter.css" rel="permalink"></a>
+      
+    </h2>
+    
+
+
+    
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/assets/css/jupyter-notebook.css" rel="permalink"></a>
       
     </h2>
     
@@ -570,21 +615,6 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/lorem-ipsum/" rel="permalink">Lorem Ipsum</a>
-      
-    </h2>
-    
-
-
-    
-  </article>
-</div>
-
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/minimal-mistakes/assets/js/lunr/lunr-en.js" rel="permalink"></a>
       
     </h2>
     
@@ -600,6 +630,21 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/assets/js/lunr/lunr-en.js" rel="permalink"></a>
+      
+    </h2>
+    
+
+
+    
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/minimal-mistakes/assets/js/lunr/lunr-en.js" rel="permalink"></a>
       
     </h2>
     
@@ -644,21 +689,6 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/minimal-mistakes/assets/js/lunr/lunr-store.js" rel="permalink"></a>
-      
-    </h2>
-    
-
-
-    
-  </article>
-</div>
-
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
         <a href="/assets/js/lunr/lunr-store.js" rel="permalink"></a>
       
     </h2>
@@ -674,7 +704,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/minimal-mistakes/assets/css/main.css" rel="permalink"></a>
+        <a href="/minimal-mistakes/assets/js/lunr/lunr-store.js" rel="permalink"></a>
       
     </h2>
     
@@ -690,6 +720,21 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/assets/css/main.css" rel="permalink"></a>
+      
+    </h2>
+    
+
+
+    
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/minimal-mistakes/assets/css/main.css" rel="permalink"></a>
       
     </h2>
     
@@ -929,7 +974,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/recipes/" rel="permalink">Recipes</a>
+        <a href="/recipes-archive/" rel="permalink">Recipes</a>
       
     </h2>
     
@@ -944,7 +989,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/recipes-archive/" rel="permalink">Recipes</a>
+        <a href="/recipes/" rel="permalink">Recipes</a>
       
     </h2>
     
@@ -1020,6 +1065,21 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/sitemap/" rel="permalink">Sitemap</a>
+      
+    </h2>
+    
+
+
+    
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sitemap.xml" rel="permalink"></a>
       
     </h2>
     
@@ -1576,7 +1636,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/sitemap.xml" rel="permalink"></a>
+        <a href="/page28/" rel="permalink"></a>
       
     </h2>
     
@@ -1592,21 +1652,6 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/robots.txt" rel="permalink"></a>
-      
-    </h2>
-    
-
-
-    
-  </article>
-</div>
-
-<div class="list__item">
-  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/feed.xml" rel="permalink"></a>
       
     </h2>
     
