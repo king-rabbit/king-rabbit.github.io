@@ -5,17 +5,15 @@
     <description>데이터 분석 / 시각화 </description>
     <link>https://king-rabbit.github.io</link>
     <atom:link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Tue, 23 Nov 2021 00:00:00 +0900</lastBuildDate>
+	<lastBuildDate>Sat, 25 Sep 2021 00:00:00 +0900</lastBuildDate>
 	
 	<item>
 		<title>pyecharts로 넷플릭스 데이터 시각화하기</title>
         
         
-            <description>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;</description>
+            <description>#pyecharts #데이터시각화 #넷플릭스</description>
         
-        <pubDate>Tue, 23 Nov 2021 00:00:00 +0900</pubDate>
+        <pubDate>Sat, 25 Sep 2021 00:00:00 +0900</pubDate>
         <link>https://king-rabbit.github.io/data%20visualization/netflix-content-analysis/</link>
         <guid isPermaLink="true">https://king-rabbit.github.io/data%20visualization/netflix-content-analysis/</guid>
       </item>
