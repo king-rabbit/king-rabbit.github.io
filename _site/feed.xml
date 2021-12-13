@@ -5,8 +5,19 @@
     <description>데이터 분석 / 시각화 </description>
     <link>https://king-rabbit.github.io</link>
     <atom:link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Tue, 23 Nov 2021 00:00:00 +0900</lastBuildDate>
+	<lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0900</lastBuildDate>
 	
+	<item>
+		<title>My Git Cheat Sheet</title>
+        
+        
+            <description>개인적으로 자주 사용하는 깃 명령어를 정리해봤어요</description>
+        
+        <pubDate>Mon, 13 Dec 2021 00:00:00 +0900</pubDate>
+        <link>https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet/</link>
+        <guid isPermaLink="true">https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet/</guid>
+      </item>
+    
 	<item>
 		<title>pyecharts로 넷플릭스 데이터 시각화하기</title>
         
@@ -112,18 +123,6 @@
         <pubDate>Wed, 24 Feb 2016 00:00:00 +0900</pubDate>
         <link>https://king-rabbit.github.io/minimal-mistakes/test/jekyll/welcome-to-jekyll/</link>
         <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/test/jekyll/welcome-to-jekyll/</guid>
-      </item>
-    
-	<item>
-		<title>Welcome to Jekyll!</title>
-        
-        
-            <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-</description>
-        
-        <pubDate>Wed, 24 Feb 2016 00:00:00 +0900</pubDate>
-        <link>https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/welcome-to-jekyll/</guid>
       </item>
     
   </channel>
