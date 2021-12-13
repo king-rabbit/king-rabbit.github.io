@@ -13,11 +13,11 @@ date: 2021-12-13
 
 
 
-개인적으로 자주 사용하는 깃 명령어를 정리해봅니다 :blush:      
+개인적으로 자주 사용하는 깃 명령어를 정리해봅니다    
 
 ​         
 
-​      
+ 
 
 **COMMIT**      
 
@@ -94,7 +94,9 @@ git config --system --list
 git config --global --list
 ```
 
-   
+​         
+
+​     
 
 **BRANCH **   
 
