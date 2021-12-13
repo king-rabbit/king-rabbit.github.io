@@ -1,0 +1,154 @@
+I"�<p>개인적으로 자주 사용하는 깃 명령어를 정리해봅니다 :blush:</p>
+
+<p>​</p>
+
+<p>​</p>
+
+<p><strong>COMMIT</strong></p>
+
+<p>add &amp; commit</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -am "커밋메시지"   
+</code></pre></div></div>
+
+<p>방금 작성한 커밋 메시지 수정하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit --amend
+</code></pre></div></div>
+
+<p>add 하기 전 수정사항 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git diff  
+</code></pre></div></div>
+
+<p>commit 하기 전 수정사항 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git diff head
+</code></pre></div></div>
+
+<p><strong>LOG</strong></p>
+
+<p>간략하게 한줄로 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log --pretty=oneline 
+</code></pre></div></div>
+
+<p>그래프로 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log --graph --all
+</code></pre></div></div>
+
+<p>diff 포함해서 보기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git log -p
+</code></pre></div></div>
+
+<p>​</p>
+
+<p><strong>CONFIG</strong></p>
+
+<p>글로벌 사용자 설정하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.name "사용자이름"
+git config --global user.email 사용자이메일주소
+</code></pre></div></div>
+
+<p>시스템 설정 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --system --list
+</code></pre></div></div>
+
+<p>글로벌 설정 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global --list
+</code></pre></div></div>
+
+<p>**BRANCH **</p>
+
+<p>새 브랜치 만들기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch 브랜치이름
+</code></pre></div></div>
+
+<p>브랜치 생성 + 새로 만든 브랜치로 이동하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -b 브랜치이름
+</code></pre></div></div>
+
+<p>브랜치 리스트 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch
+</code></pre></div></div>
+
+<p>모든 브랜치 리스트 확인하기 (로컬 + 원격)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch -a
+</code></pre></div></div>
+
+<p>브랜치 세부사항 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch -v
+</code></pre></div></div>
+
+<p>다른 브랜치로 이동하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout 브랜치이름
+</code></pre></div></div>
+
+<p>이전 브랜치로 이동하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout -
+</code></pre></div></div>
+
+<p>현재보다 한 단계 커밋 전 상태로 이동하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout HEAD~1
+</code></pre></div></div>
+
+<p>브랜치 삭제하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch -d 브랜치이름
+</code></pre></div></div>
+
+<p>브랜치 삭제하기(추가 커밋 있는 경우 강제 삭제)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch -D 브랜치이름
+</code></pre></div></div>
+
+<p>​</p>
+
+<p>​</p>
+
+<p><strong>REMOTE BRANCH</strong></p>
+
+<p>원격 저장소와 연결하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin 원격저장소주소
+</code></pre></div></div>
+
+<p>원격 저장소 목록 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote -v
+</code></pre></div></div>
+
+<p>원격 브랜치 정보 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls .git/refs/
+</code></pre></div></div>
+
+<p>원격 저장소 브랜치 목록 확인하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch -r
+</code></pre></div></div>
+
+<p>원격저장소로 push하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push 원격저장소별칭 브랜치이름
+</code></pre></div></div>
+
+<p>로컬 브랜치와 원격 브랜치 이름이 다른 경우 push하기</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push 원격저장소별칭 브랜치이름(로컬):브랜치이름(원격)
+</code></pre></div></div>
+
+:ET
