@@ -1,5 +1,5 @@
 ---
-title: "My Git Cheat Sheet"
+title: "My Git Cheat Sheet (1)"
 excerpt: "개인적으로 자주 사용하는 깃 명령어를 정리해봤어요"
 author_profile: true
 search: true
@@ -7,19 +7,19 @@ categories:
   - Version Control
 tags: 
   - Git
+toc : true
+toc-sticky : true
 layout: single
 date: 2021-12-13
 ---
 
 
 
-개인적으로 자주 사용하는 깃 명령어를 정리해봅니다    
+개인적으로 자주 사용하는 깃 명령어를 정리한 목록입니다.    
 
-​         
+​    
 
- 
-
-**COMMIT**      
+### **COMMIT**      
 
 add & commit   
 
@@ -45,11 +45,9 @@ commit 하기 전 수정사항 확인하기
 git diff head
 ```
 
+​      
 
-
-
-
-**LOG**      
+### **LOG**      
 
 간략하게 한줄로 확인하기   
 
@@ -69,11 +67,9 @@ diff 포함해서 보기
 git log -p
 ```
 
-
-
 ​      
 
-**CONFIG**   
+### **CONFIG**   
 
 글로벌 사용자 설정하기
 
@@ -96,11 +92,9 @@ git config --global --list
 
 ​         
 
-​     
+### **BRANCH**     
 
-**BRANCH **   
-
-새 브랜치 만들기   
+새 브랜치 만들기    
 
 ```
 git branch 브랜치이름
@@ -160,11 +154,9 @@ git branch -d 브랜치이름
 git branch -D 브랜치이름
 ```
 
-​      
+​        
 
-​      
-
-**REMOTE BRANCH**   
+### **REMOTE BRANCH**   
 
 원격 저장소와 연결하기   
 

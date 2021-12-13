@@ -803,8 +803,8 @@ var store = [{
         "url": "/data%20visualization/netflix-content-analysis/",
         "teaser": null
       },{
-        "title": "My Git Cheat Sheet",
-        "excerpt":"개인적으로 자주 사용하는 깃 명령어를 정리해봅니다 :blush: ​ ​ COMMIT add &amp; commit git commit -am \"커밋메시지\" 방금 작성한 커밋 메시지 수정하기 git commit --amend add 하기 전 수정사항 확인하기 git diff commit 하기 전 수정사항 확인하기 git diff head LOG 간략하게 한줄로 확인하기 git log --pretty=oneline 그래프로 확인하기 git...","categories": ["Version Control"],
+        "title": "My Git Cheat Sheet (1)",
+        "excerpt":"개인적으로 자주 사용하는 깃 명령어를 정리한 목록입니다. ​ COMMIT add &amp; commit git commit -am \"커밋메시지\" 방금 작성한 커밋 메시지 수정하기 git commit --amend add 하기 전 수정사항 확인하기 git diff commit 하기 전 수정사항 확인하기 git diff head ​ LOG 간략하게 한줄로 확인하기 git log --pretty=oneline 그래프로 확인하기 git...","categories": ["Version Control"],
         "tags": ["Git"],
         "url": "/version%20control/My-Git-Cheat-Sheet/",
         "teaser": null

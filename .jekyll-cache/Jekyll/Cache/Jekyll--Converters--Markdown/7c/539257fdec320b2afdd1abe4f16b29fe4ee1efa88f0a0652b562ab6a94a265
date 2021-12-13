@@ -1,10 +1,8 @@
-I"�<p>개인적으로 자주 사용하는 깃 명령어를 정리해봅니다 :blush:</p>
+I"7<p>개인적으로 자주 사용하는 깃 명령어를 정리한 목록입니다.</p>
 
 <p>​</p>
 
-<p>​</p>
-
-<p><strong>COMMIT</strong></p>
+<h3 id="commit"><strong>COMMIT</strong></h3>
 
 <p>add &amp; commit</p>
 
@@ -26,7 +24,9 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git diff head
 </code></pre></div></div>
 
-<p><strong>LOG</strong></p>
+<p>​</p>
+
+<h3 id="log"><strong>LOG</strong></h3>
 
 <p>간략하게 한줄로 확인하기</p>
 
@@ -45,7 +45,7 @@
 
 <p>​</p>
 
-<p><strong>CONFIG</strong></p>
+<h3 id="config"><strong>CONFIG</strong></h3>
 
 <p>글로벌 사용자 설정하기</p>
 
@@ -63,7 +63,9 @@ git config --global user.email 사용자이메일주소
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global --list
 </code></pre></div></div>
 
-<p>**BRANCH **</p>
+<p>​</p>
+
+<h3 id="branch"><strong>BRANCH</strong></h3>
 
 <p>새 브랜치 만들기</p>
 
@@ -117,9 +119,7 @@ git config --global user.email 사용자이메일주소
 
 <p>​</p>
 
-<p>​</p>
-
-<p><strong>REMOTE BRANCH</strong></p>
+<h3 id="remote-branch"><strong>REMOTE BRANCH</strong></h3>
 
 <p>원격 저장소와 연결하기</p>
 
