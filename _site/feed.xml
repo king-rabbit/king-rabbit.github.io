@@ -5,8 +5,31 @@
     <description>데이터 분석 / 시각화 </description>
     <link>https://king-rabbit.github.io</link>
     <atom:link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0900</lastBuildDate>
+	<lastBuildDate>Sat, 25 Dec 2021 00:00:00 +0900</lastBuildDate>
 	
+	<item>
+		<title>Gephi를 이용해 태블로 네트워크 그래프 그리기(1)</title>
+        
+        
+            <description>&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
+</description>
+        
+        <pubDate>Sat, 25 Dec 2021 00:00:00 +0900</pubDate>
+        <link>https://king-rabbit.github.io/data%20visualization/gephi-tableau-nx-graph/</link>
+        <guid isPermaLink="true">https://king-rabbit.github.io/data%20visualization/gephi-tableau-nx-graph/</guid>
+      </item>
+    
+	<item>
+		<title>My Git Cheat Sheet (2)</title>
+        
+        
+            <description>개인적으로 자주 사용하는 깃 명령어를 정리해봤어요</description>
+        
+        <pubDate>Thu, 16 Dec 2021 00:00:00 +0900</pubDate>
+        <link>https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2/</link>
+        <guid isPermaLink="true">https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2/</guid>
+      </item>
+    
 	<item>
 		<title>My Git Cheat Sheet (1)</title>
         
@@ -99,30 +122,6 @@
         <pubDate>Thu, 06 Oct 2016 00:00:00 +0900</pubDate>
         <link>https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/gemified-theme-beta/</link>
         <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/gemified-theme-beta/</guid>
-      </item>
-    
-	<item>
-		<title>Gemified Theme -- Alpha Release</title>
-        
-        
-            <description>&lt;p&gt;Jekyll &lt;a href=&quot;http://jekyllrb.com/docs/themes/&quot;&gt;themes distributed as Ruby gems&lt;/a&gt; are finally here to make installing and upgrading much easier. Gone are the days of forking a repo just to “install it”. Or dealing with merge conflicts when pulling in upstream commits to “upgrade it”.&lt;/p&gt;
-</description>
-        
-        <pubDate>Wed, 21 Sep 2016 00:00:00 +0900</pubDate>
-        <link>https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/gemified-theme-alpha/</link>
-        <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/gemified-theme-alpha/</guid>
-      </item>
-    
-	<item>
-		<title>Welcome to Jekyll!</title>
-        
-        
-            <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in &lt;a href=&quot;https://jekyllrb.com/docs/usage/&quot;&gt;many different ways&lt;/a&gt;, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-</description>
-        
-        <pubDate>Wed, 24 Feb 2016 00:00:00 +0900</pubDate>
-        <link>https://king-rabbit.github.io/minimal-mistakes/test/jekyll/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/test/jekyll/welcome-to-jekyll/</guid>
       </item>
     
   </channel>
