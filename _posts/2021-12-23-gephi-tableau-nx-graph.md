@@ -2,12 +2,8 @@
 title: "Gephi를 이용해 태블로 네트워크 그래프 그리기(1)"
 author_profile: true
 search: true
-categories: 
-  - Data Visualization
-tags:
-  - Tableau
-  - Gephi
-  - Network Graph
+categories: - Data Visualization
+tags: Tableau
 toc: true
 toc_sticky: true
 layout: single
