@@ -5,8 +5,32 @@
     <description>데이터 분석 / 시각화 </description>
     <link>https://king-rabbit.github.io</link>
     <atom:link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Sat, 25 Dec 2021 00:00:00 +0900</lastBuildDate>
+	<lastBuildDate>Fri, 31 Dec 9999 00:00:00 +0900</lastBuildDate>
 	
+	<item>
+		<title>Post: Future Date</title>
+        
+        
+            <description>&lt;p&gt;This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--future&lt;/code&gt; flag it should appear.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 31 Dec 9999 00:00:00 +0900</pubDate>
+        <link>https://king-rabbit.github.io/minimal-mistakes/test/post/post-future-date/</link>
+        <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/test/post/post-future-date/</guid>
+      </item>
+    
+	<item>
+		<title>Post: Future Date</title>
+        
+        
+            <description>&lt;p&gt;This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--future&lt;/code&gt; flag it should appear.&lt;/p&gt;
+</description>
+        
+        <pubDate>Fri, 31 Dec 9999 00:00:00 +0900</pubDate>
+        <link>https://king-rabbit.github.io/minimal-mistakes/docs/post/post-future-date/</link>
+        <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/docs/post/post-future-date/</guid>
+      </item>
+    
 	<item>
 		<title>Gephi를 이용해 태블로 네트워크 그래프 그리기(1)</title>
         
@@ -98,30 +122,6 @@
         <pubDate>Mon, 23 Jan 2017 00:00:00 +0900</pubDate>
         <link>https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video/</link>
         <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video/</guid>
-      </item>
-    
-	<item>
-		<title>Layout: Header Video</title>
-        
-        
-            <description>&lt;p&gt;This post should display a &lt;strong&gt;header with a responsive video&lt;/strong&gt;, if the theme supports it.&lt;/p&gt;
-</description>
-        
-        <pubDate>Mon, 23 Jan 2017 00:00:00 +0900</pubDate>
-        <link>https://king-rabbit.github.io/minimal-mistakes/docs/layout/uncategorized/layout-header-video/</link>
-        <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/docs/layout/uncategorized/layout-header-video/</guid>
-      </item>
-    
-	<item>
-		<title>Gemified Theme -- Beta Release</title>
-        
-        
-            <description>&lt;p&gt;Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes… as a gemified theme.&lt;/p&gt;
-</description>
-        
-        <pubDate>Thu, 06 Oct 2016 00:00:00 +0900</pubDate>
-        <link>https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/gemified-theme-beta/</link>
-        <guid isPermaLink="true">https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/gemified-theme-beta/</guid>
       </item>
     
   </channel>

@@ -76,6 +76,9 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
+# Writing
+future: false
+
 # Social Sharing
 twitter:
   username               :
