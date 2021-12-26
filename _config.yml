@@ -76,8 +76,6 @@ bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
 
-# Writing
-future: false
 
 # Social Sharing
 twitter:
@@ -163,6 +161,7 @@ exclude:
   - .asset-cache
   - .bundle
   - .jekyll-assets-cache
+  - .jekyll-cache
   - .sass-cache
   - assets/js/plugins
   - assets/js/_main.js
