@@ -14,6 +14,8 @@ layout: single
 date: 2021-12-25
 ---
 
+
+
 안녕하세요, 킹래빗입니다.       
 
 오늘은 Gephi와 태블로를 이용해 네트워크 그래프를 그리는 법을 이야기해보려고 합니다.   
@@ -24,6 +26,8 @@ date: 2021-12-25
 
 예시 데이터 및 데이터 정제 과정은 [**깃허브 리포지토리**](https://github.com/king-rabbit/king-rabbit-data-analysis/tree/main/netflix_content)에 올려놓았으니 참고해주세요.   
 그럼 시작해볼게요.   
+
+
 
 ## 1. Gephi용 데이터 준비 
 
