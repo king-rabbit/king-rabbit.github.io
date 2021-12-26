@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>king rabbit</title>
-    <description>데이터 분석 / 시각화 </description>
+    <title>킹래빗</title>
+    <description>데이터 분석 / 시각화 / </description>
     <link>https://king-rabbit.github.io</link>
     <atom:link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/rss+xml" />
-	<lastBuildDate>Thu, 23 Dec 2021 00:00:00 +0900</lastBuildDate>
+	<lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0900</lastBuildDate>
 	
 	<item>
-		<title>Gephi를 이용해 태블로 네트워크 그래프 그리기(1)</title>
+		<title>test</title>
         
         
-            <description>&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
+            <description>&lt;p&gt;테스트&lt;/p&gt;
 </description>
         
-        <pubDate>Thu, 23 Dec 2021 00:00:00 +0900</pubDate>
-        <link>https://king-rabbit.github.io/data%20visualization/gephi-tableau-nx-graph/</link>
-        <guid isPermaLink="true">https://king-rabbit.github.io/data%20visualization/gephi-tableau-nx-graph/</guid>
+        <pubDate>Mon, 20 Dec 2021 00:00:00 +0900</pubDate>
+        <link>https://king-rabbit.github.io/version%20control/test/</link>
+        <guid isPermaLink="true">https://king-rabbit.github.io/version%20control/test/</guid>
       </item>
     
 	<item>
