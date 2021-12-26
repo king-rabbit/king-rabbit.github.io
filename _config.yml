@@ -19,8 +19,8 @@ locale                   : "en-US"
 title                    : "king-rabbit's log"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "king rabbit"
-description              : "데이터 분석 / 시각화 "
+name                     : "킹래빗"
+description              : "데이터 분석 / 시각화 / "
 url                      : "https://king-rabbit.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -38,7 +38,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : 10 
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
