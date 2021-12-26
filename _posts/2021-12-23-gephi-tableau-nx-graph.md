@@ -4,7 +4,7 @@ excerpt: "데이터 전처리 및 Gephi 그래프 그리기"
 author_profile: true
 search: true
 categories: - Data Visualization
-tags: Tableau
+tags: - Tableau
 toc: true
 toc_sticky: true
 layout: single
