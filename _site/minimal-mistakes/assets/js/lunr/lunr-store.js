@@ -820,16 +820,4 @@ var store = [{
         "tags": ["Tableau","Gephi","Network Graph"],
         "url": "/data%20visualization/gephi-tableau-nx-graph/",
         "teaser": null
-      },{
-        "title": "Post: Future Date",
-        "excerpt":"This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the --future flag it should appear.  ","categories": ["minimal-mistakes","docs","Post"],
-        "tags": [],
-        "url": "/minimal-mistakes/docs/post/post-future-date/",
-        "teaser": null
-      },{
-        "title": "Post: Future Date",
-        "excerpt":"This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the --future flag it should appear.  ","categories": ["minimal-mistakes","test","Post"],
-        "tags": [],
-        "url": "/minimal-mistakes/test/post/post-future-date/",
-        "teaser": null
       }]
