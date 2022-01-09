@@ -817,7 +817,13 @@ var store = [{
       },{
         "title": "Gephi를 이용해 태블로 네트워크 그래프 그리기(1)",
         "excerpt":"안녕하세요, 킹래빗입니다. 오늘은 Gephi와 태블로를 이용해 네트워크 그래프를 그리는 법을 이야기해보려고 합니다. 약간 복잡할 수 있는데요, Gephi로 노드별 좌표값 데이터를 생성한 뒤 이를 태블로에 올린다고 생각하시면 됩니다. 여기서는 데이터를 준비하고 Gephi로 그래프를 그리는 것까지 하고, 2편에서 태블로에 그래프 생성을 완료하려고 합니다. 예시 데이터 및 데이터 정제 과정은 깃허브 리포지토리에 올려놓았으니...","categories": ["Data Visualization"],
-        "tags": ["Tableau","Gephi","Network Graph"],
-        "url": "/data%20visualization/gephi-tableau-nx-graph/",
+        "tags": ["Tableau"],
+        "url": "/data%20visualization/tableau-nx-graph/",
+        "teaser": null
+      },{
+        "title": "Gephi를 이용해 태블로 네트워크 그래프 그리기(2)",
+        "excerpt":"안녕하세요, 킹래빗입니다. 저번 포스팅에 이어서 네트워크 그래프를 그리는 법을 설명해 보려고 합니다. 지난 포스틩에서 Gephi에 그래프를 그리는 것까지 완성했는데요, 이번 편에서는 태블로로 그래프를 예쁘게 그려볼게요! 예시 데이터 및 데이터 정제 과정은 깃허브 리포지토리에 올려놓았으니 참고해주세요. 그럼 시작해볼게요. 1. 그래프 파일 변환하기 Gephi에서 저장한 그래프 파일을 엑셀로 열어줍니다. 엑셀로 그래프 파일을...","categories": ["Data Visualization"],
+        "tags": ["Tableau"],
+        "url": "/data%20visualization/tableau-nx-graph-2/",
         "teaser": null
       }]
