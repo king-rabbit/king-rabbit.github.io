@@ -1,4 +1,155 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://king-rabbit.github.io/" rel="alternate" type="text/html" /><updated>2022-01-09T14:49:33+09:00</updated><id>https://king-rabbit.github.io/feed.xml</id><title type="html">king-rabbit’s log</title><subtitle>데이터 분석 / 시각화 / </subtitle><author><name>킹래빗</name></author><entry><title type="html">Gephi를 이용해 태블로 네트워크 그래프 그리기(2)</title><link href="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/" rel="alternate" type="text/html" title="Gephi를 이용해 태블로 네트워크 그래프 그리기(2)" /><published>2022-01-09T00:00:00+09:00</published><updated>2022-01-09T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://king-rabbit.github.io/" rel="alternate" type="text/html" /><updated>2022-01-22T22:06:44+09:00</updated><id>https://king-rabbit.github.io/feed.xml</id><title type="html">king-rabbit’s log</title><subtitle>데이터 분석 / 시각화 / </subtitle><author><name>킹래빗</name></author><entry><title type="html">어떤 리텐션을 볼까? 리텐션 종류 알아보기</title><link href="https://king-rabbit.github.io/growth%20marketing/retention-rates/" rel="alternate" type="text/html" title="어떤 리텐션을 볼까? 리텐션 종류 알아보기" /><published>2022-01-22T00:00:00+09:00</published><updated>2022-01-22T00:00:00+09:00</updated><id>https://king-rabbit.github.io/growth%20marketing/retention-rates</id><content type="html" xml:base="https://king-rabbit.github.io/growth%20marketing/retention-rates/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
+
+&lt;p&gt;오늘은 리텐션 개념과 함께 어떤 리텐션 종류가 있는지 정리해보려고 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;리텐션-retention&quot;&gt;리텐션 Retention?&lt;/h2&gt;
+
+&lt;p&gt;리텐션은 사용자들이 &lt;strong&gt;서비스를 얼마나 꾸준히 이용하고 있는지&lt;/strong&gt;를 보여주는 지표입니다.&lt;/p&gt;
+
+&lt;p&gt;즉 처음 접속한 유저가 서비스에 가입하고 여러 기능을 사용해봤다고 해도,&lt;/p&gt;
+
+&lt;p&gt;어떤 시점에선가 여러가지 이유로 서비스를 더이상 사용하지 않을 수 있죠.&lt;/p&gt;
+
+&lt;p&gt;스포츠 팀이나 브랜드를 오랫동안 응원해주는 팬들이 있어야 팀/브랜드가 성장할 수 있듯이 서비스를 꾸준히 사용해주는 유저들이 있어야 서비스가 성장할 수 있을 겁니다.&lt;/p&gt;
+
+&lt;p&gt;또 누군가 꾸준히 사용하는 서비스일 때 비로소 그 서비스가 유의미한 기능을 제공하고 있다고 볼 수 있고요!&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/retention/aarrr-pirate-metrics.png&quot; alt=&quot;aarrr funnel&quot; style=&quot;zoom:70%;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;span style=&quot;color:grey&quot;&gt;리텐션은 AARRR 퍼널의 중간단계로, 서비스의 핵심가치를 이해한 유저들이 서비스를 꾸준히 사용하게 만들어야 하는 단계입니다. (이미지 출처: https://verycreatives.com/blog/aarrr-pirate-metrics)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;리텐션은 이런 이유에서 서비스의 성공을 판가름하는 데 가장 중요한 지표로 꼽히기도 한다고 해요.&lt;/p&gt;
+
+&lt;p&gt;따라서 리텐션 지표를 개선하는 것이 모든 팀에게 있어 중요한 과제라고 할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;리텐션은 또 여러가지 종류가 있는데, 서비스의 특징에 따라서 적절한 리텐션 지표를 설정하는 것이 중요합니다.&lt;/p&gt;
+
+&lt;p&gt;그럼 이어서 리텐션에 어떤 종류가 있는지 알아볼게요.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;클래식-리텐션-classic-retention&quot;&gt;클래식 리텐션 classic retention&lt;/h2&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;​	클래식 리텐션은 유저들이 처음 서비스를 이용한 때를 기준으로 몇 일이 지난 시점에 얼마나 많은 사람들이 접속했는지를 계산하는 지표입니다.&lt;/p&gt;
+
+&lt;p&gt;​	클래식 리텐션은 매일 날짜를 기준으로 측정되기 때문에 Day-N 리텐션이라고 불리기도 하는데요,&lt;/p&gt;
+
+&lt;p&gt;​	예를 들어 2022년 1월 22일에 처음 가입한 유저가 100명이 있다고 했을 때, 이들 중 7일이 지난 1월 29일에 60명이 접속을 했다면 Day 7 리텐션은 60%가 됩니다.&lt;/p&gt;
+
+&lt;p&gt;​	만약 어떤 캠페인을 진행했다면 캠페인이 진행되고 난 뒤 Day N 리텐션을 계산해 캠페인의 성과를 분석할 수 있겠죠.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;장점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;간단하게 계산할 수 있다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;평소 접속을 안한 유저들에 특정 일에 많이 접속했거나, 평소 많이 이용한 유저들이 특정 날짜에 별로 접속하지 않았다면 과대 또는 과소 측정될 수 있다.&lt;/li&gt;
+  &lt;li&gt;이러한 데일리 노이즈를 줄이기 위해 며칠 간의 리텐션 수치의 평균을 내는 방법도 있습니다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;어떤 서비스에 적합할까&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Daily로 사용할만한 서비스 : ex) 메신저, 모바일 게임&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;범위-리텐션-range-retention&quot;&gt;범위 리텐션 Range Retention&lt;/h2&gt;
+
+&lt;p&gt;​	범위 리텐션에서는 매일이 아니라 일정한 기간 단위로 리텐션을 계산하는데요,&lt;/p&gt;
+
+&lt;p&gt;​	그 기간 동안 한 번 이상 서비스를 이용한 유저의 수를 계산해 코호트 초기 가입자 대비 비율을 구합니다.&lt;/p&gt;
+
+&lt;p&gt;​	예를 들어 첫 주에 가입한 인원이 100명인데, 다음 주에 1번 이상 사용한 인원이 55명이면 그 주의 범위 리텐션은 55%가 됩니다.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;장점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Daily 노이즈를 방지할 수 있다&lt;/li&gt;
+  &lt;li&gt;설명하기 쉽다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;유저의 접속이 기간 내 어느 시점에 많이 일어났는지 또는 적게 일어났는지 판단하기 어렵다&lt;/li&gt;
+  &lt;li&gt;기간 단위로 계산하기 때문에 일정한 추이를 보기 위해서는 시간을 두고 기다려야 한다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;어떤 서비스에 적합할까&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;매일은 아니지만 주기적으로 사용할만한 서비스 : ex) 결제 서비스, 배달 서비스&lt;/li&gt;
+  &lt;li&gt;해당 비즈니스 모델과 유저 행동을 기반으로 했을 때 가장 가능성이 높은 기간 단위를 설정하고, 장기적인 추세를 판단하는 데 활용하면 좋은 지표.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;h2 id=&quot;롤링리턴-리텐션-rollingreturn-retention&quot;&gt;롤링/리턴 리텐션 Rolling/Return Retention&lt;/h2&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;​	마지막으로 롤링/리턴 리텐션을 살펴볼게요.&lt;/p&gt;
+
+&lt;p&gt;​	롤링 리텐션은 유저와의 &lt;strong&gt;장기적인 관계&lt;/strong&gt;를 확인하는 데 유용한 지표입니다.&lt;/p&gt;
+
+&lt;p&gt;​	롤링 리텐션은 코호트 내에서 특정 시점 이후에 다시 접속한 유저의 비율을 계산합니다.&lt;/p&gt;
+
+&lt;p&gt;​	예를 들어 처음에 100명이 가입했는데, 20일 이후에 (그 사이에 사용했든 안했든) 다시 	접속한 유저가 30명이라면 Day 20 리텐션은 30%가 됩니다.&lt;/p&gt;
+
+&lt;p&gt;​	이 때 유저가 몇 번 접속했는지는 중요하지 않습니다. 1번 이상 접속한 건 모두 같은 접속으로 칩니다.&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;장점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;계산이 간편하다&lt;/li&gt;
+  &lt;li&gt;하나의 지표로 설명이 간단하다&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;단점&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;아직 재방문을 하지 않은 유저가 미래에 다시 접속하는 경우 각 Day N 리텐션 값이 변할 수 있다.&lt;/li&gt;
+  &lt;li&gt;꾸준히 사용하는 유저와 간헐적으로 사용하는 유저가 같은 수치로 설명된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;어떤 서비스에 적합할까&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;간헐적으로 사용할만한 서비스 : ex) 쇼핑 서비스, 여행 서비스&lt;/li&gt;
+  &lt;li&gt;다른 지표를 보조하는 지표로 활용하는 것이 바람직하다. 수치 자체보다는 전체적인 추이를 살펴볼 것.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;참고문헌&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;​	&lt;그로스 해킹=&quot;&quot;&gt;, 양승화 지음. 위키북스. 2021년 01월.&lt;/그로스&gt;&lt;/p&gt;
+
+&lt;p&gt;​	braze.com/resources/articles/calculate-retention-rate.&lt;/p&gt;
+
+&lt;p&gt;​	amplitude.com/blog/n-day-retention-for-mobile-games.&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="Growth Marketing" /><category term="Retention" /><category term="AARRR" /><summary type="html">기본적인 리텐션의 정의와 종류를 알아봅니다.</summary></entry><entry><title type="html">Gephi를 이용해 태블로 네트워크 그래프 그리기(2)</title><link href="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/" rel="alternate" type="text/html" title="Gephi를 이용해 태블로 네트워크 그래프 그리기(2)" /><published>2022-01-09T00:00:00+09:00</published><updated>2022-01-09T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
 
 &lt;p&gt;저번 포스팅에 이어서 네트워크 그래프를 그리는 법을 설명해 보려고 합니다.&lt;/p&gt;
 
@@ -15060,24 +15211,7 @@ myChart_b080c58c457c4444863f7495bfe0b132.setOption(option_b080c58c457c4444863f74
 
 &lt;p&gt;테스트용으로 작성하는 첫 포스트.&lt;/p&gt;
 
-&lt;p&gt;하나 하나 정리해서 올려봐야겠다.&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="Data Visualization" /><category term="test" /><summary type="html">첫 포스트</summary></entry><entry><title type="html">Exclude Post from Search Index</title><link href="https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/post-exclude-search/" rel="alternate" type="text/html" title="Exclude Post from Search Index" /><published>2017-11-28T00:00:00+09:00</published><updated>2018-02-19T22:06:00+09:00</updated><id>https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/post-exclude-search</id><content type="html" xml:base="https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/post-exclude-search/">&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;search: false&lt;/code&gt; only works to exclude posts when using Lunr as a search provider.&lt;/p&gt;
-
-&lt;p&gt;To exclude files when using Algolia as a search provider add an array to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;algolia.files_to_exclude&lt;/code&gt; in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. For more configuration options be sure to check their &lt;a href=&quot;https://community.algolia.com/jekyll-algolia/options.html&quot;&gt;full documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;algolia&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Exclude more files from indexing&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;files_to_exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.html&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.md&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;excluded-file.html&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;_posts/2017-11-28-post-exclude-search.md&lt;/span&gt;
-    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;subdirectory/*.html&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>킹래빗</name></author><category term="minimal-mistakes" /><category term="docs" /><category term="Jekyll" /><summary type="html">This post should not appear in the search index because it has the following YAML Front Matter:</summary></entry><entry><title type="html">Exclude Post from Search Index</title><link href="https://king-rabbit.github.io/minimal-mistakes/test/jekyll/post-exclude-search/" rel="alternate" type="text/html" title="Exclude Post from Search Index" /><published>2017-11-28T00:00:00+09:00</published><updated>2018-02-19T22:05:34+09:00</updated><id>https://king-rabbit.github.io/minimal-mistakes/test/jekyll/post-exclude-search</id><content type="html" xml:base="https://king-rabbit.github.io/minimal-mistakes/test/jekyll/post-exclude-search/">&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
+&lt;p&gt;하나 하나 정리해서 올려봐야겠다.&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="Data Visualization" /><category term="test" /><summary type="html">첫 포스트</summary></entry><entry><title type="html">Exclude Post from Search Index</title><link href="https://king-rabbit.github.io/minimal-mistakes/test/jekyll/post-exclude-search/" rel="alternate" type="text/html" title="Exclude Post from Search Index" /><published>2017-11-28T00:00:00+09:00</published><updated>2018-02-19T22:05:34+09:00</updated><id>https://king-rabbit.github.io/minimal-mistakes/test/jekyll/post-exclude-search</id><content type="html" xml:base="https://king-rabbit.github.io/minimal-mistakes/test/jekyll/post-exclude-search/">&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
 
 &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -15094,7 +15228,24 @@ myChart_b080c58c457c4444863f7495bfe0b132.setOption(option_b080c58c457c4444863f74
     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;excluded-file.html&lt;/span&gt;
     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;_posts/2017-11-28-post-exclude-search.md&lt;/span&gt;
     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;subdirectory/*.html&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>킹래빗</name></author><category term="minimal-mistakes" /><category term="test" /><category term="Jekyll" /><summary type="html">This post should not appear in the search index because it has the following YAML Front Matter:</summary></entry><entry><title type="html">Layout: Header Video</title><link href="https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video/" rel="alternate" type="text/html" title="Layout: Header Video" /><published>2017-01-23T00:00:00+09:00</published><updated>2017-01-23T00:00:00+09:00</updated><id>https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video</id><content type="html" xml:base="https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video/">&lt;p&gt;This post should display a &lt;strong&gt;header with a responsive video&lt;/strong&gt;, if the theme supports it.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>킹래빗</name></author><category term="minimal-mistakes" /><category term="test" /><category term="Jekyll" /><summary type="html">This post should not appear in the search index because it has the following YAML Front Matter:</summary></entry><entry><title type="html">Exclude Post from Search Index</title><link href="https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/post-exclude-search/" rel="alternate" type="text/html" title="Exclude Post from Search Index" /><published>2017-11-28T00:00:00+09:00</published><updated>2018-02-19T22:06:00+09:00</updated><id>https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/post-exclude-search</id><content type="html" xml:base="https://king-rabbit.github.io/minimal-mistakes/docs/jekyll/post-exclude-search/">&lt;p&gt;This post should not appear in the search index because it has the following YAML Front Matter:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;false&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;search: false&lt;/code&gt; only works to exclude posts when using Lunr as a search provider.&lt;/p&gt;
+
+&lt;p&gt;To exclude files when using Algolia as a search provider add an array to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;algolia.files_to_exclude&lt;/code&gt; in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;. For more configuration options be sure to check their &lt;a href=&quot;https://community.algolia.com/jekyll-algolia/options.html&quot;&gt;full documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;algolia&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;# Exclude more files from indexing&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;files_to_exclude&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.html&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.md&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;excluded-file.html&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;_posts/2017-11-28-post-exclude-search.md&lt;/span&gt;
+    &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;subdirectory/*.html&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>킹래빗</name></author><category term="minimal-mistakes" /><category term="docs" /><category term="Jekyll" /><summary type="html">This post should not appear in the search index because it has the following YAML Front Matter:</summary></entry><entry><title type="html">Layout: Header Video</title><link href="https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video/" rel="alternate" type="text/html" title="Layout: Header Video" /><published>2017-01-23T00:00:00+09:00</published><updated>2017-01-23T00:00:00+09:00</updated><id>https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video</id><content type="html" xml:base="https://king-rabbit.github.io/minimal-mistakes/test/layout/uncategorized/layout-header-video/">&lt;p&gt;This post should display a &lt;strong&gt;header with a responsive video&lt;/strong&gt;, if the theme supports it.&lt;/p&gt;
 
 &lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt;
 
@@ -15160,70 +15311,4 @@ myChart_b080c58c457c4444863f7495bfe0b132.setOption(option_b080c58c457c4444863f74
   &lt;span class=&quot;na&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;212731897&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;vimeo&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>킹래빗</name></author><category term="minimal-mistakes" /><category term="test" /><category term="Layout" /><category term="Uncategorized" /><category term="video" /><category term="layout" /><summary type="html">This post should display a header with a responsive video, if the theme supports it.</summary></entry><entry><title type="html">Layout: Header Video</title><link href="https://king-rabbit.github.io/minimal-mistakes/docs/layout/uncategorized/layout-header-video/" rel="alternate" type="text/html" title="Layout: Header Video" /><published>2017-01-23T00:00:00+09:00</published><updated>2017-01-23T00:00:00+09:00</updated><id>https://king-rabbit.github.io/minimal-mistakes/docs/layout/uncategorized/layout-header-video</id><content type="html" xml:base="https://king-rabbit.github.io/minimal-mistakes/docs/layout/uncategorized/layout-header-video/">&lt;p&gt;This post should display a &lt;strong&gt;header with a responsive video&lt;/strong&gt;, if the theme supports it.&lt;/p&gt;
-
-&lt;h2 id=&quot;settings&quot;&gt;Settings&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Parameter&lt;/th&gt;
-      &lt;th&gt;Required&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;ID of the video&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;provider&lt;/code&gt;&lt;/td&gt;
-      &lt;td&gt;&lt;strong&gt;Required&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Hosting provider of the video, either &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;youtube&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vimeo&lt;/code&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;youtube&quot;&gt;YouTube&lt;/h3&gt;
-
-&lt;p&gt;To embed the following YouTube video at url &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://www.youtube.com/watch?v=XsxDH4HcOWA&lt;/code&gt; (long version) or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://youtu.be/XsxDH4HcOWA&lt;/code&gt; (short version) into a post or page’s main content you’d use:&lt;/p&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;XsxDH4HcOWA&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;youtube&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;!-- Courtesy of embedresponsively.com --&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/XsxDH4HcOWA&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;To embed it as a video header you’d use the following YAML Front Matter&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;XsxDH4HcOWA&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;youtube&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;vimeo&quot;&gt;Vimeo&lt;/h3&gt;
-
-&lt;p&gt;To embed the following Vimeo video at url &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://vimeo.com/212731897&lt;/code&gt; into a post or page’s main content you’d use:&lt;/p&gt;
-
-&lt;div class=&quot;language-liquid highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;212731897&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;vimeo&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;%}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;!-- Courtesy of embedresponsively.com --&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://player.vimeo.com/video/212731897?dnt=true&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;To embed it as a video header you’d use the following YAML Front Matter&lt;/p&gt;
-
-&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;header&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;na&quot;&gt;video&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;212731897&lt;/span&gt;
-    &lt;span class=&quot;na&quot;&gt;provider&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;vimeo&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>킹래빗</name></author><category term="minimal-mistakes" /><category term="docs" /><category term="Layout" /><category term="Uncategorized" /><category term="video" /><category term="layout" /><summary type="html">This post should display a header with a responsive video, if the theme supports it.</summary></entry></feed>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>킹래빗</name></author><category term="minimal-mistakes" /><category term="test" /><category term="Layout" /><category term="Uncategorized" /><category term="video" /><category term="layout" /><summary type="html">This post should display a header with a responsive video, if the theme supports it.</summary></entry></feed>

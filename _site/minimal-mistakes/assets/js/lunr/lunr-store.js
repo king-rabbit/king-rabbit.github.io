@@ -826,4 +826,10 @@ var store = [{
         "tags": ["Tableau"],
         "url": "/data%20visualization/tableau-nx-graph-2/",
         "teaser": null
+      },{
+        "title": "어떤 리텐션을 볼까? 리텐션 종류 알아보기",
+        "excerpt":"안녕하세요, 킹래빗입니다. 오늘은 리텐션 개념과 함께 어떤 리텐션 종류가 있는지 정리해보려고 합니다. 리텐션 Retention? 리텐션은 사용자들이 서비스를 얼마나 꾸준히 이용하고 있는지를 보여주는 지표입니다. 즉 처음 접속한 유저가 서비스에 가입하고 여러 기능을 사용해봤다고 해도, 어떤 시점에선가 여러가지 이유로 서비스를 더이상 사용하지 않을 수 있죠. 스포츠 팀이나 브랜드를 오랫동안 응원해주는 팬들이 있어야...","categories": ["Growth Marketing"],
+        "tags": ["Retention","AARRR"],
+        "url": "/growth%20marketing/retention-rates/",
+        "teaser": null
       }]
