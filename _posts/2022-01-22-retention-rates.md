@@ -34,9 +34,9 @@ date: 2022-01-22
 
 또 누군가 꾸준히 사용하는 서비스일 때 비로소 그 서비스가 유의미한 기능을 제공하고 있다고 볼 수 있고요!    
 
-<p align="center"><img src="/assets/images/retention/aarrr.webp" alt="aarrr funnel" style="zoom:70%;" /></p>
+<p align="center"><img src="/assets/images/retention/aarrr-pirate-metrics.png" alt="aarrr funnel" style="zoom:70%;" /></p>
 
-*<span style="color:grey">리텐션은 AARRR 퍼널의 중간단계로, 서비스의 핵심가치를 이해한 유저들이 서비스를 꾸준히 사용하게 만들어야 하는 단계입니다. (이미지 출처: https://growthrocks.com/blog/aarrr-framework/)</span>*
+*<span style="color:grey">리텐션은 AARRR 퍼널의 중간단계로, 서비스의 핵심가치를 이해한 유저들이 서비스를 꾸준히 사용하게 만들어야 하는 단계입니다. (이미지 출처: https://verycreatives.com/blog/aarrr-pirate-metrics)</span>*
 
 리텐션은 이런 이유에서 서비스의 성공을 판가름하는 데 가장 중요한 지표로 꼽히기도 한다고 해요.    
 
