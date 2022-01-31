@@ -4,7 +4,7 @@ excerpt: "기본적인 리텐션의 정의와 종류를 알아봅니다."
 author_profile: true
 search: true
 categories: 
-  - Growth Marketing
+  - growth hacking
 tags: 
   - Retention
   - AARRR

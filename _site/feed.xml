@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://king-rabbit.github.io/" rel="alternate" type="text/html" /><updated>2022-01-22T22:06:44+09:00</updated><id>https://king-rabbit.github.io/feed.xml</id><title type="html">king-rabbit’s log</title><subtitle>데이터 분석 / 시각화 / </subtitle><author><name>킹래빗</name></author><entry><title type="html">어떤 리텐션을 볼까? 리텐션 종류 알아보기</title><link href="https://king-rabbit.github.io/growth%20marketing/retention-rates/" rel="alternate" type="text/html" title="어떤 리텐션을 볼까? 리텐션 종류 알아보기" /><published>2022-01-22T00:00:00+09:00</published><updated>2022-01-22T00:00:00+09:00</updated><id>https://king-rabbit.github.io/growth%20marketing/retention-rates</id><content type="html" xml:base="https://king-rabbit.github.io/growth%20marketing/retention-rates/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://king-rabbit.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://king-rabbit.github.io/" rel="alternate" type="text/html" /><updated>2022-01-31T18:16:17+09:00</updated><id>https://king-rabbit.github.io/feed.xml</id><title type="html">king-rabbit’s log</title><subtitle>데이터 분석 / 시각화 / </subtitle><author><name>킹래빗</name></author><entry><title type="html">어떤 리텐션을 볼까? 리텐션 종류 알아보기</title><link href="https://king-rabbit.github.io/growth%20hacking/retention-rates/" rel="alternate" type="text/html" title="어떤 리텐션을 볼까? 리텐션 종류 알아보기" /><published>2022-01-22T00:00:00+09:00</published><updated>2022-01-22T00:00:00+09:00</updated><id>https://king-rabbit.github.io/growth%20hacking/retention-rates</id><content type="html" xml:base="https://king-rabbit.github.io/growth%20hacking/retention-rates/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
 
 &lt;p&gt;오늘은 리텐션 개념과 함께 어떤 리텐션 종류가 있는지 정리해보려고 합니다.&lt;/p&gt;
 
@@ -17,6 +17,8 @@
 &lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/retention/aarrr-pirate-metrics.png&quot; alt=&quot;aarrr funnel&quot; style=&quot;zoom:70%;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;&lt;span style=&quot;color:grey&quot;&gt;리텐션은 AARRR 퍼널의 중간단계로, 서비스의 핵심가치를 이해한 유저들이 서비스를 꾸준히 사용하게 만들어야 하는 단계입니다. (이미지 출처: https://verycreatives.com/blog/aarrr-pirate-metrics)&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;​&lt;/p&gt;
 
 &lt;p&gt;리텐션은 이런 이유에서 서비스의 성공을 판가름하는 데 가장 중요한 지표로 꼽히기도 한다고 해요.&lt;/p&gt;
 
@@ -149,7 +151,7 @@
 
 &lt;p&gt;​	braze.com/resources/articles/calculate-retention-rate.&lt;/p&gt;
 
-&lt;p&gt;​	amplitude.com/blog/n-day-retention-for-mobile-games.&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="Growth Marketing" /><category term="Retention" /><category term="AARRR" /><summary type="html">기본적인 리텐션의 정의와 종류를 알아봅니다.</summary></entry><entry><title type="html">Gephi를 이용해 태블로 네트워크 그래프 그리기(2)</title><link href="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/" rel="alternate" type="text/html" title="Gephi를 이용해 태블로 네트워크 그래프 그리기(2)" /><published>2022-01-09T00:00:00+09:00</published><updated>2022-01-09T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
+&lt;p&gt;​	amplitude.com/blog/n-day-retention-for-mobile-games.&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="growth hacking" /><category term="Retention" /><category term="AARRR" /><summary type="html">기본적인 리텐션의 정의와 종류를 알아봅니다.</summary></entry><entry><title type="html">Gephi를 이용해 태블로 네트워크 그래프 그리기(2)</title><link href="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/" rel="alternate" type="text/html" title="Gephi를 이용해 태블로 네트워크 그래프 그리기(2)" /><published>2022-01-09T00:00:00+09:00</published><updated>2022-01-09T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph-2/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
 
 &lt;p&gt;저번 포스팅에 이어서 네트워크 그래프를 그리는 법을 설명해 보려고 합니다.&lt;/p&gt;
 
@@ -240,7 +242,7 @@ links_concated.to_csv('data/links_concated.csv') #데이터 저장
 &lt;p&gt;마지막으로 노드 데이터의 Group 컬럼 값을 이용해 원의 색(또는 크기)을, 링크 데이터의 Value 값을 이용해 선의 색 (또는 굵기)를 설정해주세요.  &lt;br /&gt;
 이제 완성입니다!&lt;/p&gt;
 
-&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/nxgh-tb-img/tableau_4.png&quot; alt=&quot;node.csv&quot; style=&quot;zoom:70%;&quot; /&gt;&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="Data Visualization" /><category term="Tableau" /><summary type="html">데이터 전처리 및 Gephi 그래프 그리기</summary></entry><entry><title type="html">Gephi를 이용해 태블로 네트워크 그래프 그리기(1)</title><link href="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph/" rel="alternate" type="text/html" title="Gephi를 이용해 태블로 네트워크 그래프 그리기(1)" /><published>2021-12-26T00:00:00+09:00</published><updated>2021-12-26T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/tableau-nx-graph</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;/assets/images/nxgh-tb-img/tableau_4.png&quot; alt=&quot;node.csv&quot; style=&quot;zoom:70%;&quot; /&gt;&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="data visualization" /><category term="Tableau" /><summary type="html">데이터 전처리 및 Gephi 그래프 그리기</summary></entry><entry><title type="html">Gephi를 이용해 태블로 네트워크 그래프 그리기(1)</title><link href="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph/" rel="alternate" type="text/html" title="Gephi를 이용해 태블로 네트워크 그래프 그리기(1)" /><published>2021-12-26T00:00:00+09:00</published><updated>2021-12-26T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/tableau-nx-graph</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/tableau-nx-graph/">&lt;p&gt;안녕하세요, 킹래빗입니다.&lt;/p&gt;
 
 &lt;p&gt;오늘은 Gephi와 태블로를 이용해 네트워크 그래프를 그리는 법을 이야기해보려고 합니다.&lt;/p&gt;
 
@@ -338,7 +340,7 @@ links.to_csv('data/links.csv', index=False)
 
 &lt;p&gt;2편에서 태블로에 그래프 파일을 올려서 그래프를 그리는 실습을 해보도록 하겠습니다.&lt;/p&gt;
 
-&lt;p&gt;감사합니다.&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="Data Visualization" /><category term="Tableau" /><summary type="html">데이터 전처리 및 Gephi 그래프 그리기</summary></entry><entry><title type="html">My Git Cheat Sheet (2)</title><link href="https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2/" rel="alternate" type="text/html" title="My Git Cheat Sheet (2)" /><published>2021-12-16T00:00:00+09:00</published><updated>2021-12-16T00:00:00+09:00</updated><id>https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2</id><content type="html" xml:base="https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2/">&lt;p&gt;개인적으로 자주 사용하는 깃 명령어를 정리한 목록 2탄입니다 :blush:&lt;/p&gt;
+&lt;p&gt;감사합니다.&lt;/p&gt;</content><author><name>킹래빗</name></author><category term="data visualization" /><category term="Tableau" /><summary type="html">데이터 전처리 및 Gephi 그래프 그리기</summary></entry><entry><title type="html">My Git Cheat Sheet (2)</title><link href="https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2/" rel="alternate" type="text/html" title="My Git Cheat Sheet (2)" /><published>2021-12-16T00:00:00+09:00</published><updated>2021-12-16T00:00:00+09:00</updated><id>https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2</id><content type="html" xml:base="https://king-rabbit.github.io/version%20control/My-Git-Cheat-Sheet-2/">&lt;p&gt;개인적으로 자주 사용하는 깃 명령어를 정리한 목록 2탄입니다 :blush:&lt;/p&gt;
 
 &lt;h3 id=&quot;merge&quot;&gt;&lt;strong&gt;MERGE&lt;/strong&gt;&lt;/h3&gt;
 
@@ -7331,7 +7333,7 @@ button.close {
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
- /* FONT PATH
+  /* FONT PATH
  * -------------------------- */
 @font-face {
     font-family: 'FontAwesome';
@@ -9961,7 +9963,7 @@ div.traceback-wrapper pre.traceback {
  *
  * Author: Jupyter Development Team
  */
- body {
+  body {
     background-color: #fff;
     /* This makes sure that the body covers the entire window and needs to
        be in a different element than the display: box in wrapper below */
@@ -9971,16 +9973,16 @@ div.traceback-wrapper pre.traceback {
     top: 0px;
     bottom: 0px;
     overflow: visible;
- }
- body &gt; #header {
+  }
+  body &gt; #header {
     /* Initially hidden to prevent FLOUC */
     display: none;
     background-color: #fff;
     /* Display over codemirror */
     position: relative;
     z-index: 100;
- }
- body &gt; #header #header-container {
+  }
+  body &gt; #header #header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -9990,44 +9992,44 @@ div.traceback-wrapper pre.traceback {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
- }
- body &gt; #header .header-bar {
+  }
+  body &gt; #header .header-bar {
     width: 100%;
     height: 1px;
     background: #e7e7e7;
     margin-bottom: -1px;
- }
- @media print {
+  }
+  @media print {
     body &gt; #header {
     display: none !important;
     }
- }
- #header-spacer {
+  }
+  #header-spacer {
     width: 100%;
     visibility: hidden;
- }
- @media print {
+  }
+  @media print {
     #header-spacer {
     display: none;
     }
- }
- #ipython_notebook {
+  }
+  #ipython_notebook {
     padding-left: 0px;
     padding-top: 1px;
     padding-bottom: 1px;
- }
- [dir=&quot;rtl&quot;] #ipython_notebook {
+  }
+  [dir=&quot;rtl&quot;] #ipython_notebook {
     margin-right: 10px;
     margin-left: 0;
- }
- [dir=&quot;rtl&quot;] #ipython_notebook.pull-left {
+  }
+  [dir=&quot;rtl&quot;] #ipython_notebook.pull-left {
     float: right !important;
     float: right;
- }
- .flex-spacer {
+  }
+  .flex-spacer {
     flex: 1;
- }
- #noscript {
+  }
+  #noscript {
     width: auto;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -10035,133 +10037,133 @@ div.traceback-wrapper pre.traceback {
     font-size: 22px;
     color: red;
     font-weight: bold;
- }
- #ipython_notebook img {
+  }
+  #ipython_notebook img {
     height: 28px;
- }
- #site {
+  }
+  #site {
     width: 100%;
     display: none;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     overflow: auto;
- }
- @media print {
+  }
+  @media print {
     #site {
     height: auto !important;
     }
- }
- /* Smaller buttons */
- .ui-button .ui-button-text {
+  }
+  /* Smaller buttons */
+  .ui-button .ui-button-text {
     padding: 0.2em 0.8em;
     font-size: 77%;
- }
- input.ui-button {
+  }
+  input.ui-button {
     padding: 0.3em 0.9em;
- }
- span#kernel_logo_widget {
+  }
+  span#kernel_logo_widget {
     margin: 0 10px;
- }
- span#login_widget {
+  }
+  span#login_widget {
     float: right;
- }
- [dir=&quot;rtl&quot;] span#login_widget {
+  }
+  [dir=&quot;rtl&quot;] span#login_widget {
     float: left;
- }
- span#login_widget &gt; .button,
- #logout {
+  }
+  span#login_widget &gt; .button,
+  #logout {
     color: #333;
     background-color: #fff;
     border-color: #ccc;
- }
- span#login_widget &gt; .button:focus,
- #logout:focus,
- span#login_widget &gt; .button.focus,
- #logout.focus {
+  }
+  span#login_widget &gt; .button:focus,
+  #logout:focus,
+  span#login_widget &gt; .button.focus,
+  #logout.focus {
     color: #333;
     background-color: #e6e6e6;
     border-color: #8c8c8c;
- }
- span#login_widget &gt; .button:hover,
- #logout:hover {
+  }
+  span#login_widget &gt; .button:hover,
+  #logout:hover {
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
- }
- span#login_widget &gt; .button:active,
- #logout:active,
- span#login_widget &gt; .button.active,
- #logout.active,
- .open &gt; .dropdown-togglespan#login_widget &gt; .button,
- .open &gt; .dropdown-toggle#logout {
+  }
+  span#login_widget &gt; .button:active,
+  #logout:active,
+  span#login_widget &gt; .button.active,
+  #logout.active,
+  .open &gt; .dropdown-togglespan#login_widget &gt; .button,
+  .open &gt; .dropdown-toggle#logout {
     color: #333;
     background-color: #e6e6e6;
     border-color: #adadad;
- }
- span#login_widget &gt; .button:active:hover,
- #logout:active:hover,
- span#login_widget &gt; .button.active:hover,
- #logout.active:hover,
- .open &gt; .dropdown-togglespan#login_widget &gt; .button:hover,
- .open &gt; .dropdown-toggle#logout:hover,
- span#login_widget &gt; .button:active:focus,
- #logout:active:focus,
- span#login_widget &gt; .button.active:focus,
- #logout.active:focus,
- .open &gt; .dropdown-togglespan#login_widget &gt; .button:focus,
- .open &gt; .dropdown-toggle#logout:focus,
- span#login_widget &gt; .button:active.focus,
- #logout:active.focus,
- span#login_widget &gt; .button.active.focus,
- #logout.active.focus,
- .open &gt; .dropdown-togglespan#login_widget &gt; .button.focus,
- .open &gt; .dropdown-toggle#logout.focus {
+  }
+  span#login_widget &gt; .button:active:hover,
+  #logout:active:hover,
+  span#login_widget &gt; .button.active:hover,
+  #logout.active:hover,
+  .open &gt; .dropdown-togglespan#login_widget &gt; .button:hover,
+  .open &gt; .dropdown-toggle#logout:hover,
+  span#login_widget &gt; .button:active:focus,
+  #logout:active:focus,
+  span#login_widget &gt; .button.active:focus,
+  #logout.active:focus,
+  .open &gt; .dropdown-togglespan#login_widget &gt; .button:focus,
+  .open &gt; .dropdown-toggle#logout:focus,
+  span#login_widget &gt; .button:active.focus,
+  #logout:active.focus,
+  span#login_widget &gt; .button.active.focus,
+  #logout.active.focus,
+  .open &gt; .dropdown-togglespan#login_widget &gt; .button.focus,
+  .open &gt; .dropdown-toggle#logout.focus {
     color: #333;
     background-color: #d4d4d4;
     border-color: #8c8c8c;
- }
- span#login_widget &gt; .button:active,
- #logout:active,
- span#login_widget &gt; .button.active,
- #logout.active,
- .open &gt; .dropdown-togglespan#login_widget &gt; .button,
- .open &gt; .dropdown-toggle#logout {
+  }
+  span#login_widget &gt; .button:active,
+  #logout:active,
+  span#login_widget &gt; .button.active,
+  #logout.active,
+  .open &gt; .dropdown-togglespan#login_widget &gt; .button,
+  .open &gt; .dropdown-toggle#logout {
     background-image: none;
- }
- span#login_widget &gt; .button.disabled:hover,
- #logout.disabled:hover,
- span#login_widget &gt; .button[disabled]:hover,
- #logout[disabled]:hover,
- fieldset[disabled] span#login_widget &gt; .button:hover,
- fieldset[disabled] #logout:hover,
- span#login_widget &gt; .button.disabled:focus,
- #logout.disabled:focus,
- span#login_widget &gt; .button[disabled]:focus,
- #logout[disabled]:focus,
- fieldset[disabled] span#login_widget &gt; .button:focus,
- fieldset[disabled] #logout:focus,
- span#login_widget &gt; .button.disabled.focus,
- #logout.disabled.focus,
- span#login_widget &gt; .button[disabled].focus,
- #logout[disabled].focus,
- fieldset[disabled] span#login_widget &gt; .button.focus,
- fieldset[disabled] #logout.focus {
+  }
+  span#login_widget &gt; .button.disabled:hover,
+  #logout.disabled:hover,
+  span#login_widget &gt; .button[disabled]:hover,
+  #logout[disabled]:hover,
+  fieldset[disabled] span#login_widget &gt; .button:hover,
+  fieldset[disabled] #logout:hover,
+  span#login_widget &gt; .button.disabled:focus,
+  #logout.disabled:focus,
+  span#login_widget &gt; .button[disabled]:focus,
+  #logout[disabled]:focus,
+  fieldset[disabled] span#login_widget &gt; .button:focus,
+  fieldset[disabled] #logout:focus,
+  span#login_widget &gt; .button.disabled.focus,
+  #logout.disabled.focus,
+  span#login_widget &gt; .button[disabled].focus,
+  #logout[disabled].focus,
+  fieldset[disabled] span#login_widget &gt; .button.focus,
+  fieldset[disabled] #logout.focus {
     background-color: #fff;
     border-color: #ccc;
- }
- span#login_widget &gt; .button .badge,
- #logout .badge {
+  }
+  span#login_widget &gt; .button .badge,
+  #logout .badge {
     color: #fff;
     background-color: #333;
- }
- .nav-header {
+  }
+  .nav-header {
     text-transform: none;
- }
- #header &gt; span {
+  }
+  #header &gt; span {
     margin-top: 10px;
- }
- .modal_stretch .modal-dialog {
+  }
+  .modal_stretch .modal-dialog {
     /* Old browsers */
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -10177,28 +10179,28 @@ div.traceback-wrapper pre.traceback {
     flex-direction: column;
     align-items: stretch;
     min-height: 80vh;
- }
- .modal_stretch .modal-dialog .modal-body {
+  }
+  .modal_stretch .modal-dialog .modal-body {
     max-height: calc(100vh - 200px);
     overflow: auto;
     flex: 1;
- }
- .modal-header {
+  }
+  .modal-header {
     cursor: move;
- }
- @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
     .modal .modal-dialog {
     width: 700px;
     }
- }
- @media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
     select.form-control {
     margin-left: 12px;
     margin-right: 12px;
     }
- }
- /*!
- *
+  }
+  /*!
+  *
 * IPython auth
 *
 */
@@ -10259,231 +10261,231 @@ div.traceback-wrapper pre.traceback {
  *
  * Author: Jupyter Development Team
  */
- ul#tabs {
+  ul#tabs {
     margin-bottom: 4px;
- }
- ul#tabs a {
+  }
+  ul#tabs a {
     padding-top: 6px;
     padding-bottom: 4px;
- }
- [dir=&quot;rtl&quot;] ul#tabs.nav-tabs &gt; li {
+  }
+  [dir=&quot;rtl&quot;] ul#tabs.nav-tabs &gt; li {
     float: right;
- }
- [dir=&quot;rtl&quot;] ul#tabs.nav.nav-tabs {
+  }
+  [dir=&quot;rtl&quot;] ul#tabs.nav.nav-tabs {
     padding-right: 0;
- }
- ul.breadcrumb a:focus,
- ul.breadcrumb a:hover {
+  }
+  ul.breadcrumb a:focus,
+  ul.breadcrumb a:hover {
     text-decoration: none;
- }
- ul.breadcrumb i.icon-home {
+  }
+  ul.breadcrumb i.icon-home {
     font-size: 16px;
     margin-right: 4px;
- }
- ul.breadcrumb span {
+  }
+  ul.breadcrumb span {
     color: #5e5e5e;
- }
- .list_toolbar {
+  }
+  .list_toolbar {
     padding: 4px 0 4px 0;
     vertical-align: middle;
- }
- .list_toolbar .tree-buttons {
+  }
+  .list_toolbar .tree-buttons {
     padding-top: 1px;
- }
- [dir=&quot;rtl&quot;] .list_toolbar .tree-buttons .pull-right {
+  }
+  [dir=&quot;rtl&quot;] .list_toolbar .tree-buttons .pull-right {
     float: left !important;
     float: left;
- }
- [dir=&quot;rtl&quot;] .list_toolbar .col-sm-4,
- [dir=&quot;rtl&quot;] .list_toolbar .col-sm-8 {
+  }
+  [dir=&quot;rtl&quot;] .list_toolbar .col-sm-4,
+  [dir=&quot;rtl&quot;] .list_toolbar .col-sm-8 {
     float: right;
- }
- .dynamic-buttons {
+  }
+  .dynamic-buttons {
     padding-top: 3px;
     display: inline-block;
- }
- .list_toolbar [class*=&quot;span&quot;] {
+  }
+  .list_toolbar [class*=&quot;span&quot;] {
     min-height: 24px;
- }
- .list_header {
+  }
+  .list_header {
     font-weight: bold;
     background-color: #EEE;
- }
- .list_placeholder {
+  }
+  .list_placeholder {
     font-weight: bold;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 7px;
     padding-right: 7px;
- }
- .list_container {
+  }
+  .list_container {
     margin-top: 4px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 2px;
- }
- .list_container &gt; div {
+  }
+  .list_container &gt; div {
     border-bottom: 1px solid #ddd;
- }
- .list_container &gt; div:hover .list-item {
+  }
+  .list_container &gt; div:hover .list-item {
     background-color: red;
- }
- .list_container &gt; div:last-child {
+  }
+  .list_container &gt; div:last-child {
     border: none;
- }
- .list_item:hover .list_item {
+  }
+  .list_item:hover .list_item {
     background-color: #ddd;
- }
- .list_item a {
+  }
+  .list_item a {
     text-decoration: none;
- }
- .list_item:hover {
+  }
+  .list_item:hover {
     background-color: #fafafa;
- }
- .list_header &gt; div,
- .list_item &gt; div {
+  }
+  .list_header &gt; div,
+  .list_item &gt; div {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 7px;
     padding-right: 7px;
     line-height: 22px;
- }
- .list_header &gt; div input,
- .list_item &gt; div input {
+  }
+  .list_header &gt; div input,
+  .list_item &gt; div input {
     margin-right: 7px;
     margin-left: 14px;
     vertical-align: text-bottom;
     line-height: 22px;
     position: relative;
     top: -1px;
- }
- .list_header &gt; div .item_link,
- .list_item &gt; div .item_link {
+  }
+  .list_header &gt; div .item_link,
+  .list_item &gt; div .item_link {
     margin-left: -1px;
     vertical-align: baseline;
     line-height: 22px;
- }
- [dir=&quot;rtl&quot;] .list_item &gt; div input {
+  }
+  [dir=&quot;rtl&quot;] .list_item &gt; div input {
     margin-right: 0;
- }
- .new-file input[type=checkbox] {
+  }
+  .new-file input[type=checkbox] {
     visibility: hidden;
- }
- .item_name {
+  }
+  .item_name {
     line-height: 22px;
     height: 24px;
- }
- .item_icon {
+  }
+  .item_icon {
     font-size: 14px;
     color: #5e5e5e;
     margin-right: 7px;
     margin-left: 7px;
     line-height: 22px;
     vertical-align: baseline;
- }
- .item_modified {
+  }
+  .item_modified {
     margin-right: 7px;
     margin-left: 7px;
- }
- [dir=&quot;rtl&quot;] .item_modified.pull-right {
+  }
+  [dir=&quot;rtl&quot;] .item_modified.pull-right {
     float: left !important;
     float: left;
- }
- .item_buttons {
+  }
+  .item_buttons {
     line-height: 1em;
     margin-left: -5px;
- }
- .item_buttons .btn,
- .item_buttons .btn-group,
- .item_buttons .input-group {
+  }
+  .item_buttons .btn,
+  .item_buttons .btn-group,
+  .item_buttons .input-group {
     float: left;
- }
- .item_buttons &gt; .btn,
- .item_buttons &gt; .btn-group,
- .item_buttons &gt; .input-group {
+  }
+  .item_buttons &gt; .btn,
+  .item_buttons &gt; .btn-group,
+  .item_buttons &gt; .input-group {
     margin-left: 5px;
- }
- .item_buttons .btn {
+  }
+  .item_buttons .btn {
     min-width: 13ex;
- }
- .item_buttons .running-indicator {
+  }
+  .item_buttons .running-indicator {
     padding-top: 4px;
     color: #5cb85c;
- }
- .item_buttons .kernel-name {
+  }
+  .item_buttons .kernel-name {
     padding-top: 4px;
     color: #5bc0de;
     margin-right: 7px;
     float: left;
- }
- [dir=&quot;rtl&quot;] .item_buttons.pull-right {
+  }
+  [dir=&quot;rtl&quot;] .item_buttons.pull-right {
     float: left !important;
     float: left;
- }
- [dir=&quot;rtl&quot;] .item_buttons .kernel-name {
+  }
+  [dir=&quot;rtl&quot;] .item_buttons .kernel-name {
     margin-left: 7px;
     float: right;
- }
- .toolbar_info {
+  }
+  .toolbar_info {
     height: 24px;
     line-height: 24px;
- }
- .list_item input:not([type=checkbox]) {
+  }
+  .list_item input:not([type=checkbox]) {
     padding-top: 3px;
     padding-bottom: 3px;
     height: 22px;
     line-height: 14px;
     margin: 0px;
- }
- .highlight_text {
+  }
+  .highlight_text {
     color: blue;
- }
- #project_name {
+  }
+  #project_name {
     display: inline-block;
     padding-left: 7px;
     margin-left: -2px;
- }
- #project_name &gt; .breadcrumb {
+  }
+  #project_name &gt; .breadcrumb {
     padding: 0px;
     margin-bottom: 0px;
     background-color: transparent;
     font-weight: bold;
- }
- .sort_button {
+  }
+  .sort_button {
     display: inline-block;
     padding-left: 7px;
- }
- [dir=&quot;rtl&quot;] .sort_button.pull-right {
+  }
+  [dir=&quot;rtl&quot;] .sort_button.pull-right {
     float: left !important;
     float: left;
- }
- #tree-selector {
+  }
+  #tree-selector {
     padding-right: 0px;
- }
- #button-select-all {
+  }
+  #button-select-all {
     min-width: 50px;
- }
- [dir=&quot;rtl&quot;] #button-select-all.btn {
+  }
+  [dir=&quot;rtl&quot;] #button-select-all.btn {
     float: right ;
- }
- #select-all {
+  }
+  #select-all {
     margin-left: 7px;
     margin-right: 2px;
     margin-top: 2px;
     height: 16px;
- }
- [dir=&quot;rtl&quot;] #select-all.pull-left {
+  }
+  [dir=&quot;rtl&quot;] #select-all.pull-left {
     float: right !important;
     float: right;
- }
- .menu_icon {
+  }
+  .menu_icon {
     margin-right: 2px;
- }
- .tab-content .row {
+  }
+  .tab-content .row {
     margin-left: 0px;
     margin-right: 0px;
- }
- .folder_icon:before {
+  }
+  .folder_icon:before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -10491,20 +10493,20 @@ div.traceback-wrapper pre.traceback {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: &quot;\f114&quot;;
- }
- .folder_icon:before.fa-pull-left {
+  }
+  .folder_icon:before.fa-pull-left {
     margin-right: .3em;
- }
- .folder_icon:before.fa-pull-right {
+  }
+  .folder_icon:before.fa-pull-right {
     margin-left: .3em;
- }
- .folder_icon:before.pull-left {
+  }
+  .folder_icon:before.pull-left {
     margin-right: .3em;
- }
- .folder_icon:before.pull-right {
+  }
+  .folder_icon:before.pull-right {
     margin-left: .3em;
- }
- .notebook_icon:before {
+  }
+  .notebook_icon:before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -10514,20 +10516,20 @@ div.traceback-wrapper pre.traceback {
     content: &quot;\f02d&quot;;
     position: relative;
     top: -1px;
- }
- .notebook_icon:before.fa-pull-left {
+  }
+  .notebook_icon:before.fa-pull-left {
     margin-right: .3em;
- }
- .notebook_icon:before.fa-pull-right {
+  }
+  .notebook_icon:before.fa-pull-right {
     margin-left: .3em;
- }
- .notebook_icon:before.pull-left {
+  }
+  .notebook_icon:before.pull-left {
     margin-right: .3em;
- }
- .notebook_icon:before.pull-right {
+  }
+  .notebook_icon:before.pull-right {
     margin-left: .3em;
- }
- .running_notebook_icon:before {
+  }
+  .running_notebook_icon:before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -10538,20 +10540,20 @@ div.traceback-wrapper pre.traceback {
     position: relative;
     top: -1px;
     color: #5cb85c;
- }
- .running_notebook_icon:before.fa-pull-left {
+  }
+  .running_notebook_icon:before.fa-pull-left {
     margin-right: .3em;
- }
- .running_notebook_icon:before.fa-pull-right {
+  }
+  .running_notebook_icon:before.fa-pull-right {
     margin-left: .3em;
- }
- .running_notebook_icon:before.pull-left {
+  }
+  .running_notebook_icon:before.pull-left {
     margin-right: .3em;
- }
- .running_notebook_icon:before.pull-right {
+  }
+  .running_notebook_icon:before.pull-right {
     margin-left: .3em;
- }
- .file_icon:before {
+  }
+  .file_icon:before {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
@@ -10561,102 +10563,102 @@ div.traceback-wrapper pre.traceback {
     content: &quot;\f016&quot;;
     position: relative;
     top: -2px;
- }
- .file_icon:before.fa-pull-left {
+  }
+  .file_icon:before.fa-pull-left {
     margin-right: .3em;
- }
- .file_icon:before.fa-pull-right {
+  }
+  .file_icon:before.fa-pull-right {
     margin-left: .3em;
- }
- .file_icon:before.pull-left {
+  }
+  .file_icon:before.pull-left {
     margin-right: .3em;
- }
- .file_icon:before.pull-right {
+  }
+  .file_icon:before.pull-right {
     margin-left: .3em;
- }
- #notebook_toolbar .pull-right {
+  }
+  #notebook_toolbar .pull-right {
     padding-top: 0px;
     margin-right: -1px;
- }
- ul#new-menu {
+  }
+  ul#new-menu {
     left: auto;
     right: 0;
- }
- #new-menu .dropdown-header {
+  }
+  #new-menu .dropdown-header {
     font-size: 10px;
     border-bottom: 1px solid #e5e5e5;
     padding: 0 0 3px;
     margin: -3px 20px 0;
- }
- .kernel-menu-icon {
+  }
+  .kernel-menu-icon {
     padding-right: 12px;
     width: 24px;
     content: &quot;\f096&quot;;
- }
- .kernel-menu-icon:before {
+  }
+  .kernel-menu-icon:before {
     content: &quot;\f096&quot;;
- }
- .kernel-menu-icon-current:before {
+  }
+  .kernel-menu-icon-current:before {
     content: &quot;\f00c&quot;;
- }
- #tab_content {
+  }
+  #tab_content {
     padding-top: 20px;
- }
- #running .panel-group .panel {
+  }
+  #running .panel-group .panel {
     margin-top: 3px;
     margin-bottom: 1em;
- }
- #running .panel-group .panel .panel-heading {
+  }
+  #running .panel-group .panel .panel-heading {
     background-color: #EEE;
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 7px;
     padding-right: 7px;
     line-height: 22px;
- }
- #running .panel-group .panel .panel-heading a:focus,
- #running .panel-group .panel .panel-heading a:hover {
+  }
+  #running .panel-group .panel .panel-heading a:focus,
+  #running .panel-group .panel .panel-heading a:hover {
     text-decoration: none;
- }
- #running .panel-group .panel .panel-body {
+  }
+  #running .panel-group .panel .panel-body {
     padding: 0px;
- }
- #running .panel-group .panel .panel-body .list_container {
+  }
+  #running .panel-group .panel .panel-body .list_container {
     margin-top: 0px;
     margin-bottom: 0px;
     border: 0px;
     border-radius: 0px;
- }
- #running .panel-group .panel .panel-body .list_container .list_item {
+  }
+  #running .panel-group .panel .panel-body .list_container .list_item {
     border-bottom: 1px solid #ddd;
- }
- #running .panel-group .panel .panel-body .list_container .list_item:last-child {
+  }
+  #running .panel-group .panel .panel-body .list_container .list_item:last-child {
     border-bottom: 0px;
- }
- .delete-button {
+  }
+  .delete-button {
     display: none;
- }
- .duplicate-button {
+  }
+  .duplicate-button {
     display: none;
- }
- .rename-button {
+  }
+  .rename-button {
     display: none;
- }
- .move-button {
+  }
+  .move-button {
     display: none;
- }
- .download-button {
+  }
+  .download-button {
     display: none;
- }
- .shutdown-button {
+  }
+  .shutdown-button {
     display: none;
- }
- .dynamic-instructions {
+  }
+  .dynamic-instructions {
     display: inline-block;
     padding-top: 4px;
- }
- /*!
- *
+  }
+  /*!
+  *
 * IPython text editor webapp
 *
 */
@@ -11241,7 +11243,7 @@ div.input_area &gt; div.highlight &gt; pre {
  *      vertical-align: bottom;
  * }
  */
- .CodeMirror {
+  .CodeMirror {
     line-height: 1.21429em;
     /* Changed from 1em to our global default */
     font-size: 14px;
@@ -11249,48 +11251,48 @@ div.input_area &gt; div.highlight &gt; pre {
     /* Changed to auto to autogrow */
     background: none;
     /* Changed from white to allow our bg to show through */
- }
- .CodeMirror-scroll {
+  }
+  .CodeMirror-scroll {
     /*  The CodeMirror docs are a bit fuzzy on if overflow-y should be hidden or visible.*/
     /*  We have found that if it is visible, vertical scrollbars appear with font size changes.*/
     overflow-y: hidden;
     overflow-x: auto;
- }
- .CodeMirror-lines {
+  }
+  .CodeMirror-lines {
     /* In CM2, this used to be 0.4em, but in CM3 it went to 4px. We need the em value because */
     /* we have set a different line-height and want this to scale with that. */
     /* Note that this should set vertical padding only, since CodeMirror assumes
        that horizontal padding will be set on CodeMirror pre */
     padding: 0.4em 0;
- }
- .CodeMirror-linenumber {
+  }
+  .CodeMirror-linenumber {
     padding: 0 8px 0 4px;
- }
- .CodeMirror-gutters {
+  }
+  .CodeMirror-gutters {
     border-bottom-left-radius: 2px;
     border-top-left-radius: 2px;
- }
- .CodeMirror pre {
+  }
+  .CodeMirror pre {
     /* In CM3 this went to 4px from 0 in CM2. This sets horizontal padding only,
     use .CodeMirror-lines for vertical */
     padding: 0 0.4em;
     border: 0;
     border-radius: 0;
- }
- .CodeMirror-cursor {
+  }
+  .CodeMirror-cursor {
     border-left: 1.4px solid black;
- }
- @media screen and (min-width: 2138px) and (max-width: 4319px) {
+  }
+  @media screen and (min-width: 2138px) and (max-width: 4319px) {
     .CodeMirror-cursor {
     border-left: 2px solid black;
     }
- }
- @media screen and (min-width: 4320px) {
+  }
+  @media screen and (min-width: 4320px) {
     .CodeMirror-cursor {
     border-left: 4px solid black;
     }
- }
- /*
+  }
+  /*
 
 Original style from softwaremaniacs.org (c) Ivan Sagalaev &lt;Maniac@SoftwareManiacs.Org&gt;
 Adapted from GitHub theme
@@ -13267,11 +13269,11 @@ li.pulse.open &gt; a.dropdown-toggle {
  *
  * Author: Jupyter Development Team
  */
- /** WARNING IF YOU ARE EDITTING THIS FILE, if this is a .css file, It has a lot
+  /** WARNING IF YOU ARE EDITTING THIS FILE, if this is a .css file, It has a lot
  * of chance of beeing generated from the ../less/[samename].less file, you can
  * try to get back the less file by reverting somme commit in history
  **/
- /*
+  /*
  * We'll try to get something pretty, so we
  * have some strange css to have the scroll bar on
  * the left with fix button on the top right of the tooltip
@@ -15205,7 +15207,7 @@ myChart_b080c58c457c4444863f7495bfe0b132.setOption(option_b080c58c457c4444863f74
  
 
 
-&lt;/html&gt;</content><author><name>킹래빗</name></author><category term="Data Visualization" /><category term="test" /><summary type="html">초보자도 쉽게 따라할 수 있는 pyechart 시각화</summary></entry><entry><title type="html">첫 포스트</title><link href="https://king-rabbit.github.io/data%20visualization/first-blog-post/" rel="alternate" type="text/html" title="첫 포스트" /><published>2021-09-25T00:00:00+09:00</published><updated>2021-09-25T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/first-blog-post</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/first-blog-post/">&lt;p&gt;첫 포스트&lt;/p&gt;
+&lt;/html&gt;</content><author><name>킹래빗</name></author><category term="data visualization" /><category term="test" /><summary type="html">초보자도 쉽게 따라할 수 있는 pyechart 시각화</summary></entry><entry><title type="html">첫 포스트</title><link href="https://king-rabbit.github.io/data%20visualization/first-blog-post/" rel="alternate" type="text/html" title="첫 포스트" /><published>2021-09-25T00:00:00+09:00</published><updated>2021-09-25T00:00:00+09:00</updated><id>https://king-rabbit.github.io/data%20visualization/first-blog-post</id><content type="html" xml:base="https://king-rabbit.github.io/data%20visualization/first-blog-post/">&lt;p&gt;첫 포스트&lt;/p&gt;
 
 &lt;hr /&gt;
 
