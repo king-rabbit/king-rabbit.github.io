@@ -5,12 +5,14 @@ layout: single
 
 {{content}}
 
-<ul class="posts-list">
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
   {% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
         <a href="{{ site.baseurl }}{{ post.url }}">
           {% include archive-single.html type=entries_layout %}
         </a>
   {% endfor %}
-</ul>
+</div>
 
