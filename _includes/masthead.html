@@ -11,6 +11,22 @@
           {{ site.masthead_title | default: site.title }}
           {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
         </a>
+
+        <ul class="nav-category-menu">
+    
+          {% assign pages_list = site.pages %}
+          {% for node in pages_list %}
+            {% if node.title != null %}
+              {% if node.layout == "category" %}
+                <li class="nav-category-items"><a class="category-link {% if page.url == node.url %} active{% endif %}"
+                href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          
+      </ul>
+
+
         <ul class="visible-links">
           {%- for link in site.data.navigation.main -%}
             <li class="masthead__menu-item">
