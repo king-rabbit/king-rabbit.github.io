@@ -1,5 +1,5 @@
 ---
-Layout: category
-Title: python
+layout: category
+title: python
 ---
 

@@ -1,5 +1,5 @@
 ---
-Layout: category
-Title: growth hacking
+layout: category
+title: growth hacking
 ---
 

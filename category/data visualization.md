@@ -1,5 +1,5 @@
 ---
-Layout: category
-Title: data visualization
+layout: category
+title: data visualization
 ---
 

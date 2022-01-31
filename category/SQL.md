@@ -1,5 +1,5 @@
 ---
-Layout: category
-Title: SQL
+layout: category
+title: SQL
 ---
 
