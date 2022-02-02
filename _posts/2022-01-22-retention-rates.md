@@ -62,7 +62,7 @@ date: 2022-01-22
 
 ​	예를 들어 2022년 1월 22일에 처음 가입한 유저가 100명이 있다고 했을 때, 이들 중 7일이 지난 1월 29일에 60명이 접속을 했다면 Day 7 리텐션은 60%가 됩니다.    
 
-<p align="center"><img src="/assets/images/retention/classic_retention.png" alt="aarrr funnel" style="zoom:70%;" /></p>
+<p align="center"><img src="/assets/images/retention/classic_retention.png" alt="classic retention" style="zoom:70%;" /></p>
 
 ​	만약 어떤 캠페인을 진행했다면 캠페인이 진행되고 난 뒤 Day N 리텐션을 계산해 캠페인의 성과를 분석할 수 있겠죠.    
 
@@ -95,7 +95,7 @@ date: 2022-01-22
 
 ​	예를 들어 첫 주에 가입한 인원이 100명인데, 다음 주에 1번 이상 사용한 인원이 55명이면 그 주의 범위 리텐션은 55%가 됩니다.    
 
-<p align="center"><img src="/assets/images/retention/range_retention.png" alt="aarrr funnel" style="zoom:70%;" /></p>
+<p align="center"><img src="/assets/images/retention/range_retention.png" alt="range retention" style="zoom:70%;" /></p>
 
 ​    
 
@@ -130,7 +130,7 @@ date: 2022-01-22
 
 ​	예를 들어 처음에 100명이 가입했는데, 20일 이후에 (그 사이에 사용했든 안했든) 다시 	접속한 유저가 30명이라면 Day 20 리텐션은 30%가 됩니다.    
 
-<p align="center"><img src="/assets/images/retention/rolling_retention.png" alt="aarrr funnel" style="zoom:70%;" /></p>
+<p align="center"><img src="/assets/images/retention/rolling_retention.png" alt="rolling retention" style="zoom:70%;" /></p>
 
 ​	이 때 유저가 몇 번 접속했는지는 중요하지 않습니다. 1번 이상 접속한 건 모두 같은 접속으로 칩니다.    
 
