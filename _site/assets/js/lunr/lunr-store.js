@@ -832,4 +832,16 @@ var store = [{
         "tags": ["Retention","AARRR"],
         "url": "/growth%20hacking/retention-rates/",
         "teaser": null
+      },{
+        "title": "자주 쓰는 MYSQL 문자열 함수",
+        "excerpt":"안녕하세요, 킹래빗입니다. 오늘은 SQL에서 자주 사용하고 또 종종 헷갈리는 문자열 함수를 정리해봤어요! 저는 주로 MYSQL을 사용하고 있어서 MYSQL 함수로 정리했으니 참고해주세요. » 문자열을 이어보자 CONCAT(문자열, 문자열) 복수의 문자열을 잇는 함수입니다. 이어서 쓰고 싶은 문자열 두개를 넣어줍니다. SELECT CONCAT('ABC', 'DEF'); -- 'ABCEDF'를 반환 » 몇번째 글자까지만 가져오기 LEFT(문자열, 길이) 또는 RIGHT(문자열,...","categories": ["SQL"],
+        "tags": ["SQL","MYSQL"],
+        "url": "/sql/mysql-str-functions/",
+        "teaser": null
+      },{
+        "title": "파이썬으로 xml 파싱하기",
+        "excerpt":"안녕하세요, 킹래빗입니다. 최근에 XML 파일을 파싱할 일이 생겨서 파이썬으로 파싱하는 방법을 글로 정리해봅니다. 파이썬 표준 라이브러리인 xml.etree.ElementTree을 사용해서 파싱하는 방법이구요. 공식 문서를 참고해 작성했습니다. ​ XML이란? xml은 트리 형태의 데이터인데요, html과 유사한 형태로 노드(또는 element)들이 층을 지어 나누어져 있습니다. 각 노드는 태그로 이뤄져있고, 태그에 attribute가 있을 수 있어요. 또 태그가...","categories": ["python"],
+        "tags": ["python","xml"],
+        "url": "/python/python-xml-parsing/",
+        "teaser": null
       }]

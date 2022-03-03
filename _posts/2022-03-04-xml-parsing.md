@@ -3,7 +3,7 @@ title: "파이썬으로 xml 파싱하기"
 excerpt: "파이썬 내장 라이브러리인 etree 라이브러리로 xml 데이터를 파싱하는 방법"
 author_profile: true
 search: true
-categories: 
+categories:
   - python
 tags: 
   - python
