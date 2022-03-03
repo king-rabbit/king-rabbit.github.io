@@ -7,7 +7,6 @@ categories:
   - python
 tags: 
   - python
-  - xml
 toc : true
 toc-sticky : true
 layout: single
