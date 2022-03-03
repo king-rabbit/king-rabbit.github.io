@@ -840,8 +840,8 @@ var store = [{
         "teaser": null
       },{
         "title": "파이썬으로 xml 파싱하기",
-        "excerpt":"안녕하세요, 킹래빗입니다. 최근에 XML 파일을 파싱할 일이 생겨서 파이썬으로 파싱하는 방법을 글로 정리해봅니다. 파이썬 표준 라이브러리인 xml.etree.ElementTree을 사용해서 파싱하는 방법이구요. 공식 문서를 참고해 작성했습니다. ​ XML이란? xml은 트리 형태의 데이터인데요, html과 유사한 형태로 노드(또는 element)들이 층을 지어 나누어져 있습니다. 각 노드는 태그로 이뤄져있고, 태그에 attribute가 있을 수 있어요. 또 태그가...","categories": ["python"],
+        "excerpt":"안녕하세요, 킹래빗입니다. 최근에 XML 파일을 파싱할 일이 생겨서 파이썬으로 파싱하는 방법을 글로 정리해봅니다. 파이썬 표준 라이브러리인 xml.etree.ElementTree을 사용해서 파싱하는 방법이구요. 공식 문서를 참고해 작성했습니다. ​ XML이란? xml은 트리 형태의 데이터인데요, html과 유사한 형태로 노드(또는 element)들이 층을 지어 나누어져 있습니다. 각 노드는 태그로 이뤄져있고, 태그에 attribute가 있을 수 있어요. 또 태그가...","categories": ["SQL"],
         "tags": ["python","xml"],
-        "url": "/python/python-xml-parsing/",
+        "url": "/sql/xml-parsing/",
         "teaser": null
       }]

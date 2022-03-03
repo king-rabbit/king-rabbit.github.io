@@ -4,7 +4,7 @@ excerpt: "파이썬 내장 라이브러리인 etree 라이브러리로 xml 데�
 author_profile: true
 search: true
 categories:
-  - python
+  - SQL
 tags: 
   - python
   - xml
