@@ -33,9 +33,9 @@
 }
 
 .archive__subtitle {
-  margin: 1.414em 0 0.5em;
+  margin: 0.5em 0 0.5em;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  font-size: 1.5em; //$type-size-5;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
 
@@ -61,7 +61,7 @@
   }
 
   a + a {
-    opacity: 0.5;
+    opacity: 0.9;
   }
 }
 
