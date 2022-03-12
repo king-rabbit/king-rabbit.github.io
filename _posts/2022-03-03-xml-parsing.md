@@ -43,7 +43,7 @@ xml은 트리 형태의 데이터인데요, html과 유사한 형태로 노드(�
 
 그럼 본격적으로 데이터를 불러오고 파싱 작업을 시작해 보겠습니다.    
 
-샘플 파일(books.xml)은 [여기]([https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms762271(v=vs.85](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms762271(v=vs.85)) 에서 가져왔습니다.     
+샘플 파일(books.xml)은 [여기](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms762271(v=vs.85))에서 가져왔습니다.     
 
 ​    
 
