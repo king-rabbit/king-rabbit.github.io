@@ -6,8 +6,8 @@ div.highlighter-rouge,
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
-  background: #abcff55e; //$base00
-  color: #444662; //$base05
+  background: #0a2644ef; //$base00
+  color: #f8f8f8; //$base05
   font-family: $monospace;
   font-size: $type-size-6;
   line-height: 1.8;
@@ -78,7 +78,7 @@ figure.highlight {
   }
   .n {
     /* Name */
-    color: $base05;
+    color: #ffffff //$base05;
   }
   .o {
     /* Operator */
@@ -98,7 +98,7 @@ figure.highlight {
   }
   .c1 {
     /* Comment.Single */
-    color: $base04;
+    color: #ceedc6 //$base04;
   }
   .cs {
     /* Comment.Special */
@@ -177,7 +177,7 @@ figure.highlight {
   }
   .nb {
     /* Name.Builtin */
-    color: $base05;
+    color: #ffffff //$base05;
   }
   .nc {
     /* Name.Class */
