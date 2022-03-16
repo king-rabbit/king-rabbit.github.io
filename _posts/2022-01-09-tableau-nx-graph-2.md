@@ -21,7 +21,7 @@ date: 2022-01-09
 
 지난 포스틩에서 Gephi에 그래프를 그리는 것까지 완성했는데요, 이번 편에서는 태블로로 그래프를 예쁘게 그려볼게요!
 
-예시 데이터 및 데이터 정제 과정은 [**깃허브 리포지토리**](https://github.com/king-rabbit/king-rabbit-data-analysis/tree/main/netflix_content)에 올려놓았으니 참고해주세요.   
+예시 데이터 및 데이터 정제 과정은 [**깃허브 리포지토리**](https://github.com/king-rabbit/king-rabbit-data-analysis/tree/main/network_graph)에 올려놓았으니 참고해주세요.   
 그럼 시작해볼게요.   
 
 

@@ -23,7 +23,7 @@ date: 2021-12-26
 
 여기서는 데이터를 준비하고 Gephi로 그래프를 그리는 것까지 하고, 2편에서 태블로에 그래프 생성을 완료하려고 합니다.
 
-예시 데이터 및 데이터 정제 과정은 [**깃허브 리포지토리**](https://github.com/king-rabbit/king-rabbit-data-analysis/tree/main/netflix_content)에 올려놓았으니 참고해주세요.   
+예시 데이터 및 데이터 정제 과정은 [**깃허브 리포지토리**](https://github.com/king-rabbit/king-rabbit-data-analysis/tree/main/network_graph)에 올려놓았으니 참고해주세요.   
 그럼 시작해볼게요.   
 
 
